@@ -1,0 +1,66 @@
+{
+  "Ne": {
+    "code": "Ne",
+    "name": "Extraverted Intuition",
+    "attitude": "Extraverted",
+    "domain": "Intuition",
+    "slide": "Creative Thinking",
+    "description": "Noticing trends and possibilities in a reality filled with unknown opportunities"
+  },
+  "Ni": {
+    "code": "Ni",
+    "name": "Introverted Intuition",
+    "attitude": "Introverted",
+    "domain": "Intuition",
+    "slide": "Reality Distillation",
+    "description": "Seeing through distortions; having hunches of unfounded truth; the source of unknown ideas"
+  },
+  "Se": {
+    "code": "Se",
+    "name": "Extraverted Sensing",
+    "attitude": "Extraverted",
+    "domain": "Sensing",
+    "slide": "Tactical Action",
+    "description": "Living in the moment and accepting reality with a just-react response"
+  },
+  "Si": {
+    "code": "Si",
+    "name": "Introverted Sensing",
+    "attitude": "Introverted",
+    "domain": "Sensing",
+    "slide": "Dynamic Stabilisation",
+    "description": "Anchoring oneself to safe bets in a world that feels inherently chaotic"
+  },
+  "Fe": {
+    "code": "Fe",
+    "name": "Extraverted Ethics",
+    "attitude": "Extraverted",
+    "domain": "Ethics",
+    "slide": "Social Interest",
+    "description": "Concern for the roles people play and how we relate in a shared social world"
+  },
+  "Fi": {
+    "code": "Fi",
+    "name": "Introverted Ethics",
+    "attitude": "Introverted",
+    "domain": "Ethics",
+    "slide": "Ethical Harmony",
+    "description": "Concern for harmony between self and others; the rational attitude of moral values"
+  },
+  "Te": {
+    "code": "Te",
+    "name": "Extraverted Logic",
+    "attitude": "Extraverted",
+    "domain": "Logic",
+    "slide": "Practical Results",
+    "description": "Seeking practical, externally predictable results through decisive decision-making"
+  },
+  "Ti": {
+    "code": "Ti",
+    "name": "Introverted Logic",
+    "attitude": "Introverted",
+    "domain": "Logic",
+    "slide": "Academic Knowledge",
+    "description": "Seeking to understand how something works structurally; demanding complete underlying knowledge"
+  }
+}

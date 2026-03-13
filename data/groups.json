@@ -1,0 +1,108 @@
+{
+  "quadras": {
+    "Alpha": {
+      "name": "Alpha",
+      "types": ["ILE", "LII", "ESE", "SEI"],
+      "mbti": ["ENTp", "INTj", "ESFj", "ISFp"],
+      "theme": "Reflecting and delighting in",
+      "dualStyle": "Careful-Infantile",
+      "lifeStage": "Childhood",
+      "valuedFunctions": ["Ne", "Ti", "Fe", "Si"],
+      "description": "Alpha types share an orientation toward creating new ideas and information as a means of maintaining harmony in a socially shared world. Innate curiosity, balanced by a concern for the feelings and comfort of those around them."
+    },
+    "Beta": {
+      "name": "Beta",
+      "types": ["SLE", "LSI", "EIE", "IEI"],
+      "mbti": ["ESTp", "ISTj", "ENFj", "INFp"],
+      "theme": "Achievement and endurance",
+      "dualStyle": "Aggressor-Victim",
+      "lifeStage": "Adolescence",
+      "valuedFunctions": ["Se", "Ti", "Fe", "Ni"],
+      "description": "Beta types share an active, driven orientation toward getting things done in response to a chaotic or resistant world. A fighting spirit, compelled by a sense of glory, honour and the need to prove oneself."
+    },
+    "Gamma": {
+      "name": "Gamma",
+      "types": ["SEE", "ESI", "LIE", "ILI"],
+      "mbti": ["ESFp", "ISFj", "ENTj", "INTp"],
+      "theme": "Collaboration and acquisition",
+      "dualStyle": "Aggressor-Victim",
+      "lifeStage": "Adulthood",
+      "valuedFunctions": ["Se", "Fi", "Te", "Ni"],
+      "description": "Gamma types share an orientation toward marketing and bringing new ideas into acceptance, discarding what no longer works in a forward-moving world. A socially and commercially oriented quadra."
+    },
+    "Delta": {
+      "name": "Delta",
+      "types": ["IEE", "EII", "LSE", "SLI"],
+      "mbti": ["ENFp", "INFj", "ESTj", "ISTp"],
+      "theme": "Protection and assistance",
+      "dualStyle": "Careful-Infantile",
+      "lifeStage": "Old age",
+      "valuedFunctions": ["Ne", "Fi", "Te", "Si"],
+      "description": "Delta types share an orientation toward protecting and improving the immediate environment for those within it. Practical idealism — making things genuinely better in concrete, lasting ways."
+    }
+  },
+  "clubs": {
+    "Researcher": {
+      "name": "Researcher",
+      "shortName": "NT",
+      "types": ["ILE", "LII", "LIE", "ILI"],
+      "mbti": ["ENTp", "INTj", "ENTj", "INTp"],
+      "theme": "Systematic inquiry and conceptual ingenuity",
+      "description": "NT types combine Intuition and Logic. Driven by systematic inquiry, theoretical modelling and conceptual precision. Alpha NTs approach the world with playful abstraction; Gamma NTs apply it toward competitive, real-world outcomes."
+    },
+    "Socializer": {
+      "name": "Socializer",
+      "shortName": "SF",
+      "types": ["ESE", "SEI", "SEE", "ESI"],
+      "mbti": ["ESFj", "ISFp", "ESFp", "ISFj"],
+      "theme": "Sympathy and social presence",
+      "description": "SF types combine Sensing and Ethics. Warm, socially present, and attuned to the needs and feelings of others. Alpha SFs seek connection through extroverted Ethics; Gamma SFs maintain harmony through introverted Ethics."
+    },
+    "Pragmatist": {
+      "name": "Pragmatist",
+      "shortName": "ST",
+      "types": ["SLE", "LSI", "LSE", "SLI"],
+      "mbti": ["ESTp", "ISTj", "ESTj", "ISTp"],
+      "theme": "Practical, matter-of-fact problem solving",
+      "description": "ST types combine Sensing and Logic. Action-oriented realists who prefer results over theory. Beta STs are driven by extroverted Sensing — fast-paced, risk-taking, tactical. Delta STs are driven by introverted Sensing — structured, methodical, grounded."
+    },
+    "Humanitarian": {
+      "name": "Humanitarian",
+      "shortName": "NF",
+      "types": ["EIE", "IEI", "IEE", "EII"],
+      "mbti": ["ENFj", "INFp", "ENFp", "INFj"],
+      "theme": "Enthusiasm for human welfare and meaning",
+      "description": "NF types combine Intuition and Ethics. Idealistic and people-centred, with a concern for the welfare, happiness and spiritual development of others. Beta NFs support unconditionally through introverted Intuition; Delta NFs bring harmony through extroverted Intuition."
+    }
+  },
+  "temperaments": {
+    "EP": {
+      "name": "EP",
+      "fullName": "Extroverted Irrational",
+      "types": ["ILE", "SLE", "SEE", "IEE"],
+      "mbti": ["ENTp", "ESTp", "ESFp", "ENFp"],
+      "description": "High energy, stimulus-seeking, flexible and spontaneous. Comfortable with ambiguity and change. Can struggle with follow-through and sustained routine."
+    },
+    "EJ": {
+      "name": "EJ",
+      "fullName": "Extroverted Rational",
+      "types": ["ESE", "EIE", "LIE", "LSE"],
+      "mbti": ["ESFj", "ENFj", "ENTj", "ESTj"],
+      "description": "Organised, decisive and driven. Natural leaders and initiators. Comfortable taking charge and setting direction. Can be inflexible or overbearing."
+    },
+    "IP": {
+      "name": "IP",
+      "fullName": "Introverted Irrational",
+      "types": ["SEI", "IEI", "ILI", "SLI"],
+      "mbti": ["ISFp", "INFp", "INTp", "ISTp"],
+      "description": "Calm, adaptable and self-contained. Comfortable with inaction and observation. Steady under pressure. Can appear passive or disengaged."
+    },
+    "IJ": {
+      "name": "IJ",
+      "fullName": "Introverted Rational",
+      "types": ["LII", "LSI", "ESI", "EII"],
+      "mbti": ["INTj", "ISTj", "ISFj", "INFj"],
+      "description": "Principled, precise and consistent. Strong inner standards and a stable worldview. Reliable but can be rigid or resistant to external feedback."
+    }
+  }
+}

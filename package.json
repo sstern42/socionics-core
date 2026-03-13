@@ -1,0 +1,30 @@
+{
+  "name": "socionics-core",
+  "version": "1.0.0",
+  "description": "Canonical socionics data and query library — 16 types, intertype relations, quadras, clubs and temperaments.",
+  "main": "index.js",
+  "author": "Spencer Stern (https://github.com/sstern42)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sstern42/socionics-core.git"
+  },
+  "homepage": "https://www.socionicsinsight.com",
+  "keywords": [
+    "socionics",
+    "mbti",
+    "personality",
+    "typology",
+    "intertype-relations",
+    "model-a",
+    "jungian",
+    "quadra",
+    "16-types"
+  ],
+  "scripts": {
+    "test": "node test/basic.test.js"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
