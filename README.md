@@ -1,6 +1,6 @@
 # socionics-core
 
-Canonical socionics data and query library. Covers all 16 types, 15 intertype relations, 8 functions, quadras, clubs and temperaments — structured for use in any JavaScript project.
+Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, quadras, clubs and temperaments — structured for use in any JavaScript project.
 
 No dependencies. No build step. Works in Node.js 12+.
 
