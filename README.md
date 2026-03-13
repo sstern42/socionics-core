@@ -237,20 +237,22 @@ data.groups    // quadras, clubs, temperaments
 
 | Relation | Orientation | Rhythm | Vibe | Symmetry |
 |----------|-------------|--------|------|----------|
+| Identity | Monoverted | Rhythmic | Repulsive | Symmetrical |
 | Dual | Hetroverted | Rhythmic | Attractive | Symmetrical |
 | Activation | Monoverted | Arrhythmic | Attractive | Symmetrical |
 | Mirror | Hetroverted | Arrhythmic | Repulsive | Symmetrical |
 | Kindred | Monoverted | Rhythmic | Repulsive | Symmetrical |
 | Semi-dual | Hetroverted | Rhythmic | Attractive | Symmetrical |
 | Business | Monoverted | Rhythmic | Repulsive | Symmetrical |
-| Mirage | Hetroverted | Rhythmic | Attractive | Symmetrical |
 | Quasi-identity | Monoverted | Arrhythmic | Attractive | Symmetrical |
-| Extinguishment | Hetroverted | Rhythmic | Attractive | Symmetrical |
+| Benefactor | Monoverted | Arrhythmic | Attractive | **Asymmetrical** |
+| Beneficiary | Monoverted | Arrhythmic | Attractive | **Asymmetrical** |
+| Supervisor | Hetroverted | Arrhythmic | Repulsive | **Asymmetrical** |
+| Supervisee | Hetroverted | Arrhythmic | Repulsive | **Asymmetrical** |
 | Super-ego | Monoverted | Rhythmic | Repulsive | Symmetrical |
-| Identity | Monoverted | Rhythmic | Repulsive | Symmetrical |
+| Extinguishment | Hetroverted | Rhythmic | Attractive | Symmetrical |
+| Mirage | Hetroverted | Rhythmic | Attractive | Symmetrical |
 | Conflict | Hetroverted | Arrhythmic | Repulsive | Symmetrical |
-| Benefaction | Monoverted | Arrhythmic | Attractive | **Asymmetrical** |
-| Supervision | Hetroverted | Arrhythmic | Repulsive | **Asymmetrical** |
 
 ---
 
