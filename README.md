@@ -233,7 +233,7 @@ data.groups    // quadras, clubs, temperaments
 
 ---
 
-## The 15 intertype relations
+## The 16 intertype relations
 
 | Relation | Orientation | Rhythm | Vibe | Symmetry |
 |----------|-------------|--------|------|----------|
