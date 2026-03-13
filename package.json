@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sstern42/socionics-core.git"
+    "url": "git+https://github.com/sstern42/socionics-core.git"
   },
   "homepage": "https://www.socionicsinsight.com",
   "keywords": [
