@@ -111,7 +111,7 @@ Returns the function object for a code (`'Ne'`, `'Ti'`, `'Fe'` etc).
 }
 ```
 
-The `slide` field is the SLIDE attitude name from socionics theory (see [socionicsinsight.com/functions](https://www.socionicsinsight.com/functions/)).
+The `slide` field is the SLIDE attitude name — a secondary descriptive label for each function used in socionics theory.
 
 #### `getAllFunctions()` → object[]
 Returns all 8 function objects as an array.
