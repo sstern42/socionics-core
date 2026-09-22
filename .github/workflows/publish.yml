@@ -1,0 +1,44 @@
+# Publishes socionics-core to npm when a GitHub release is published.
+#
+# Uses npm trusted publishing (OIDC): npmjs.com is configured to trust this
+# workflow file in sstern42/socionics-core, so no npm token is stored anywhere.
+# To release: bump "version" in package.json, merge, then create a GitHub
+# release whose tag is that version with a leading v (e.g. v1.1.0).
+
+name: Publish to npm
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # lets npm verify this run came from this workflow
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      # Trusted publishing needs npm 11.5.1 or later.
+      - run: npm install -g npm@latest
+
+      - name: Check the release tag matches package.json
+        if: github.event_name == 'release'
+        run: |
+          version="v$(node -p "require('./package.json').version")"
+          if [ "$version" != "${{ github.event.release.tag_name }}" ]; then
+            echo "Release tag ${{ github.event.release.tag_name }} does not match package.json ($version)"
+            exit 1
+          fi
+
+      - run: npm test
+
+      - run: npm publish
