@@ -1,7 +1,7 @@
 {
   "name": "socionics-core",
-  "version": "1.0.0",
-  "description": "Canonical socionics data and query library — 16 types, intertype relations, quadras, clubs and temperaments.",
+  "version": "1.1.0",
+  "description": "Canonical socionics data and query library — 16 types, intertype relations, dichotomies, quadras, clubs and temperaments.",
   "main": "index.js",
   "author": "Spencer Stern (https://github.com/sstern42)",
   "license": "MIT",
@@ -19,6 +19,8 @@
     "model-a",
     "jungian",
     "quadra",
+    "reinin",
+    "dichotomies",
     "16-types"
   ],
   "scripts": {

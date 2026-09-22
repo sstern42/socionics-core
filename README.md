@@ -1,6 +1,6 @@
 # socionics-core
 
-Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, quadras, clubs and temperaments — structured for use in any JavaScript project.
+Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, 15 dichotomies, quadras, clubs and temperaments — structured for use in any JavaScript project.
 
 No dependencies. No build step. Works in Node.js 12+.
 
@@ -74,6 +74,23 @@ getType('LII')  // or 'lii', 'Lii'
   communicationStyle: 'Cool',
   stimulus: 'Confident',
   argumentation: 'Constructor',
+  dichotomies: {
+    extraversionIntroversion: 'Introverted',
+    intuitionSensing: 'Intuitive',
+    logicEthics: 'Logical',
+    rationalityIrrationality: 'Rational',
+    staticDynamic: 'Static',
+    processResult: 'Result',
+    positivistNegativist: 'Negativist',
+    aristocraticDemocratic: 'Democratic',
+    constructivistEmotivist: 'Emotivist',
+    judiciousDecisive: 'Judicious',
+    carefreeFarsighted: 'Farsighted',
+    yieldingObstinate: 'Obstinate',
+    askingDeclaring: 'Asking',
+    tacticalStrategic: 'Strategic',
+    subjectivistObjectivist: 'Subjectivist'
+  },
   functions: [
     { position: 1, block: 'Ego',       role: 'Leading',      code: 'Ti' },
     { position: 2, block: 'Ego',       role: 'Creative',     code: 'Ne' },
@@ -198,6 +215,51 @@ Returns the raw groups data containing all quadras, clubs and temperaments.
 
 ---
 
+### Dichotomies
+
+The four Jungian dichotomies and Reinin's eleven, fifteen in all. Every type carries its pole on each one under `type.dichotomies`, keyed by dichotomy id.
+
+#### `getDichotomy(idOrPole)` → object
+Accepts a dichotomy id (`'staticDynamic'`) or either pole name (`'Static'`, `'dynamic'`). Case-insensitive.
+
+```js
+{
+  id: 'staticDynamic',
+  name: 'Static / Dynamic',
+  kind: 'reinin',
+  poles: ['Static', 'Dynamic'],
+  product: ['extraversionIntroversion', 'rationalityIrrationality']
+}
+```
+
+`product` names the Jungian dichotomies this one is built from: two types fall on the same pole exactly when they differ on an even number of the listed Jungian dichotomies. For the four Jungian dichotomies it is the dichotomy itself. `subjectivistObjectivist` also carries `alsoKnownAs: { name: 'Merry / Serious', poles: ['Merry', 'Serious'] }`.
+
+#### `getAllDichotomies()` → object[]
+Returns all 15, the four Jungian first.
+
+#### `getTypesByPole(pole)` → object[]
+Returns the 8 types on one pole, e.g. `getTypesByPole('Positivist')`.
+
+| Id | Name | Kind | Product of |
+|----|------|------|------------|
+| `extraversionIntroversion` | Extraversion / Introversion | Jungian | Extraversion |
+| `intuitionSensing` | Intuition / Sensing | Jungian | Intuition |
+| `logicEthics` | Logic / Ethics | Jungian | Logic |
+| `rationalityIrrationality` | Rationality / Irrationality | Jungian | Rationality |
+| `staticDynamic` | Static / Dynamic | Reinin | Extraversion × Rationality |
+| `processResult` | Process / Result | Reinin | Intuition × Logic × Rationality |
+| `positivistNegativist` | Positivist / Negativist | Reinin | Extraversion × Intuition × Logic |
+| `aristocraticDemocratic` | Aristocratic / Democratic | Reinin | Intuition × Logic |
+| `constructivistEmotivist` | Constructivist / Emotivist | Reinin | Logic × Rationality |
+| `judiciousDecisive` | Judicious / Decisive | Reinin | Extraversion × Intuition × Rationality |
+| `carefreeFarsighted` | Carefree / Farsighted | Reinin | Extraversion × Intuition |
+| `yieldingObstinate` | Yielding / Obstinate | Reinin | Extraversion × Logic |
+| `askingDeclaring` | Asking / Declaring | Reinin | Extraversion × Intuition × Logic × Rationality |
+| `tacticalStrategic` | Tactical / Strategic | Reinin | Intuition × Rationality |
+| `subjectivistObjectivist` | Subjectivist / Objectivist | Reinin | Extraversion × Logic × Rationality |
+
+---
+
 ### Raw data access
 
 ```js
@@ -206,6 +268,7 @@ data.types     // all 16 type objects keyed by code
 data.relations // byType lookup + relation metadata
 data.functions // all 8 function objects keyed by code
 data.groups    // quadras, clubs, temperaments
+data.dichotomies // all 15 dichotomies keyed by id
 ```
 
 ---

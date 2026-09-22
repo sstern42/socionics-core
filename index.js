@@ -4,6 +4,7 @@ const typesData     = require('./data/types.json');
 const relationsData = require('./data/relations.json');
 const functionsData = require('./data/functions.json');
 const groupsData    = require('./data/groups.json');
+const dichotomiesData = require('./data/dichotomies.json');
 
 // ─── Internal helpers ────────────────────────────────────────────────────────
 
@@ -221,6 +222,43 @@ function getAllGroups() {
   return groupsData;
 }
 
+// ─── Dichotomies ─────────────────────────────────────────────────────────────
+
+/**
+ * Returns a dichotomy by id (e.g. 'staticDynamic') or by either pole name
+ * (e.g. 'Static', 'dynamic'). Case-insensitive.
+ * @param {string} idOrPole
+ * @returns {object}
+ */
+function getDichotomy(idOrPole) {
+  const target = String(idOrPole).trim().toLowerCase();
+  const found = Object.values(dichotomiesData).find(d =>
+    d.id.toLowerCase() === target || d.poles.some(p => p.toLowerCase() === target)
+  );
+  if (!found) throw new Error(`Unknown dichotomy or pole: "${idOrPole}". Valid ids: ${Object.keys(dichotomiesData).join(', ')}`);
+  return found;
+}
+
+/**
+ * Returns all 15 dichotomies (4 Jungian, then 11 Reinin) as an array.
+ * @returns {object[]}
+ */
+function getAllDichotomies() {
+  return Object.values(dichotomiesData);
+}
+
+/**
+ * Returns the 8 types on a given pole of a dichotomy.
+ * @param {string} pole - e.g. 'Static', 'Positivist', 'Rational'
+ * @returns {object[]} - array of type objects
+ */
+function getTypesByPole(pole) {
+  const d = getDichotomy(pole);
+  const p = d.poles.find(x => x.toLowerCase() === String(pole).trim().toLowerCase());
+  if (!p) throw new Error(`"${pole}" is a dichotomy id, not a pole. Poles of ${d.id}: ${d.poles.join(', ')}`);
+  return Object.values(typesData).filter(t => t.dichotomies[d.id] === p);
+}
+
 // ─── Exports ─────────────────────────────────────────────────────────────────
 
 module.exports = {
@@ -240,11 +278,16 @@ module.exports = {
   getClub,
   getTemperament,
   getAllGroups,
+  // Dichotomies
+  getDichotomy,
+  getAllDichotomies,
+  getTypesByPole,
   // Raw data (for advanced use)
   data: {
     types:     typesData,
     relations: relationsData,
     functions: functionsData,
-    groups:    groupsData
+    groups:    groupsData,
+    dichotomies: dichotomiesData
   }
 };

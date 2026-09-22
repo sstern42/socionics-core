@@ -7,7 +7,8 @@ const {
   getType, getAllTypes, getTypeByMbti,
   getFunction, getAllFunctions,
   getRelation, getRelationsFor, getTypesByRelation,
-  getQuadra, getClub, getTemperament
+  getQuadra, getClub, getTemperament,
+  getDichotomy, getAllDichotomies, getTypesByPole
 } = require('../index.js');
 
 let passed = 0;
@@ -117,6 +118,57 @@ assert('IJ contains LII',              ij.types.includes('LII'));
 
 const ijFromType = getTemperament('LII');
 assert('lookup by type code works',    ijFromType.name === 'IJ');
+
+// ─── Dichotomies ─────────────────────────────────────────────────────────────
+section('getAllDichotomies()');
+const dichs = getAllDichotomies();
+assert('returns 15 dichotomies',       dichs.length === 15);
+assert('4 Jungian, 11 Reinin',         dichs.filter(d => d.kind === 'jungian').length === 4 &&
+                                       dichs.filter(d => d.kind === 'reinin').length === 11);
+assert('every type has all 15 values', all.every(t =>
+  dichs.every(d => d.poles.includes(t.dichotomies[d.id])) &&
+  Object.keys(t.dichotomies).length === 15));
+assert('every pole holds 8 types',     dichs.every(d => d.poles.every(p => getTypesByPole(p).length === 8)));
+assert('no two types share a profile', new Set(all.map(t => JSON.stringify(t.dichotomies))).size === 16);
+
+// Jungian values agree with the older top-level fields.
+assert('E/I agrees with extraversion', all.every(t =>
+  (t.dichotomies.extraversionIntroversion === 'Extraverted') === t.extraversion));
+assert('rationality agrees',           all.every(t =>
+  t.dichotomies.rationalityIrrationality === t.rationality));
+assert('N/S and T/F agree with club',  all.every(t => {
+  const short = getClub(t.code).shortName;
+  return (t.dichotomies.intuitionSensing === 'Intuitive') === (short[0] === 'N') &&
+         (t.dichotomies.logicEthics === 'Logical') === (short[1] === 'T');
+}));
+
+// Each dichotomy is the parity of the Jungian dichotomies named in `product`,
+// and the 15 products are the 15 non-empty subsets of the four, once each.
+const jungIds = dichs.filter(d => d.kind === 'jungian').map(d => d.id);
+const bit = (t, id) => t.dichotomies[id] === getDichotomy(id).poles[0];
+assert('products are 15 distinct subsets', new Set(dichs.map(d =>
+  d.product.slice().sort().join('+'))).size === 15 &&
+  dichs.every(d => d.product.every(id => jungIds.includes(id))));
+assert('each dichotomy is its product', dichs.every(d => {
+  const parity = t => d.product.reduce((acc, id) => acc !== bit(t, id), false);
+  const same = all.map(t => parity(t) === bit(t, d.id));
+  return same.every(Boolean) || same.every(x => !x);
+}));
+
+// The three Reinin dichotomies that follow quadra lines.
+const quadrasOf = pole => [...new Set(getTypesByPole(pole).map(t => t.quadra))].sort().join('+');
+assert('Subjectivist is Alpha+Beta',   quadrasOf('Subjectivist') === 'Alpha+Beta');
+assert('Judicious is Alpha+Delta',     quadrasOf('Judicious') === 'Alpha+Delta');
+assert('Democratic is Alpha+Gamma',    quadrasOf('Democratic') === 'Alpha+Gamma');
+
+section('getDichotomy()');
+assert('lookup by id',                 getDichotomy('staticDynamic').name === 'Static / Dynamic');
+assert('lookup by pole, any case',     getDichotomy('dynamic').id === 'staticDynamic');
+assert('LII is Static',                lii.dichotomies.staticDynamic === 'Static');
+assert('Merry/Serious alias recorded', getDichotomy('Subjectivist').alsoKnownAs.name === 'Merry / Serious');
+let threw = false;
+try { getDichotomy('Cheerful'); } catch (_) { threw = true; }
+assert('throws on unknown name',       threw);
 
 // ─── Summary ─────────────────────────────────────────────────────────────────
 console.log(`\n${'─'.repeat(40)}`);
