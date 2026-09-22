@@ -1,0 +1,206 @@
+{
+  "extraversionIntroversion": {
+    "id": "extraversionIntroversion",
+    "name": "Extraversion / Introversion",
+    "kind": "jungian",
+    "poles": [
+      "Extraverted",
+      "Introverted"
+    ],
+    "product": [
+      "extraversionIntroversion"
+    ]
+  },
+  "intuitionSensing": {
+    "id": "intuitionSensing",
+    "name": "Intuition / Sensing",
+    "kind": "jungian",
+    "poles": [
+      "Intuitive",
+      "Sensing"
+    ],
+    "product": [
+      "intuitionSensing"
+    ]
+  },
+  "logicEthics": {
+    "id": "logicEthics",
+    "name": "Logic / Ethics",
+    "kind": "jungian",
+    "poles": [
+      "Logical",
+      "Ethical"
+    ],
+    "product": [
+      "logicEthics"
+    ]
+  },
+  "rationalityIrrationality": {
+    "id": "rationalityIrrationality",
+    "name": "Rationality / Irrationality",
+    "kind": "jungian",
+    "poles": [
+      "Rational",
+      "Irrational"
+    ],
+    "product": [
+      "rationalityIrrationality"
+    ]
+  },
+  "staticDynamic": {
+    "id": "staticDynamic",
+    "name": "Static / Dynamic",
+    "kind": "reinin",
+    "poles": [
+      "Static",
+      "Dynamic"
+    ],
+    "product": [
+      "extraversionIntroversion",
+      "rationalityIrrationality"
+    ]
+  },
+  "processResult": {
+    "id": "processResult",
+    "name": "Process / Result",
+    "kind": "reinin",
+    "poles": [
+      "Process",
+      "Result"
+    ],
+    "product": [
+      "intuitionSensing",
+      "logicEthics",
+      "rationalityIrrationality"
+    ]
+  },
+  "positivistNegativist": {
+    "id": "positivistNegativist",
+    "name": "Positivist / Negativist",
+    "kind": "reinin",
+    "poles": [
+      "Positivist",
+      "Negativist"
+    ],
+    "product": [
+      "extraversionIntroversion",
+      "intuitionSensing",
+      "logicEthics"
+    ]
+  },
+  "aristocraticDemocratic": {
+    "id": "aristocraticDemocratic",
+    "name": "Aristocratic / Democratic",
+    "kind": "reinin",
+    "poles": [
+      "Aristocratic",
+      "Democratic"
+    ],
+    "product": [
+      "intuitionSensing",
+      "logicEthics"
+    ]
+  },
+  "constructivistEmotivist": {
+    "id": "constructivistEmotivist",
+    "name": "Constructivist / Emotivist",
+    "kind": "reinin",
+    "poles": [
+      "Constructivist",
+      "Emotivist"
+    ],
+    "product": [
+      "logicEthics",
+      "rationalityIrrationality"
+    ]
+  },
+  "judiciousDecisive": {
+    "id": "judiciousDecisive",
+    "name": "Judicious / Decisive",
+    "kind": "reinin",
+    "poles": [
+      "Judicious",
+      "Decisive"
+    ],
+    "product": [
+      "extraversionIntroversion",
+      "intuitionSensing",
+      "rationalityIrrationality"
+    ]
+  },
+  "carefreeFarsighted": {
+    "id": "carefreeFarsighted",
+    "name": "Carefree / Farsighted",
+    "kind": "reinin",
+    "poles": [
+      "Carefree",
+      "Farsighted"
+    ],
+    "product": [
+      "extraversionIntroversion",
+      "intuitionSensing"
+    ]
+  },
+  "yieldingObstinate": {
+    "id": "yieldingObstinate",
+    "name": "Yielding / Obstinate",
+    "kind": "reinin",
+    "poles": [
+      "Yielding",
+      "Obstinate"
+    ],
+    "product": [
+      "extraversionIntroversion",
+      "logicEthics"
+    ]
+  },
+  "askingDeclaring": {
+    "id": "askingDeclaring",
+    "name": "Asking / Declaring",
+    "kind": "reinin",
+    "poles": [
+      "Asking",
+      "Declaring"
+    ],
+    "product": [
+      "extraversionIntroversion",
+      "intuitionSensing",
+      "logicEthics",
+      "rationalityIrrationality"
+    ]
+  },
+  "tacticalStrategic": {
+    "id": "tacticalStrategic",
+    "name": "Tactical / Strategic",
+    "kind": "reinin",
+    "poles": [
+      "Tactical",
+      "Strategic"
+    ],
+    "product": [
+      "intuitionSensing",
+      "rationalityIrrationality"
+    ]
+  },
+  "subjectivistObjectivist": {
+    "id": "subjectivistObjectivist",
+    "name": "Subjectivist / Objectivist",
+    "kind": "reinin",
+    "poles": [
+      "Subjectivist",
+      "Objectivist"
+    ],
+    "product": [
+      "extraversionIntroversion",
+      "logicEthics",
+      "rationalityIrrationality"
+    ],
+    "alsoKnownAs": {
+      "name": "Merry / Serious",
+      "poles": [
+        "Merry",
+        "Serious"
+      ]
+    }
+  }
+}
