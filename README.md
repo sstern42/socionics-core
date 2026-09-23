@@ -1,6 +1,6 @@
 # socionics-core
 
-Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, 15 dichotomies, quadras, clubs and temperaments — structured for use in any JavaScript project.
+Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, 15 dichotomies, quadras, clubs and temperaments, structured for use in any JavaScript project.
 
 No dependencies. No build step. Works in Node.js 12+.
 
@@ -40,11 +40,24 @@ console.log(ben.direction.beneficiary); // 'EIE'
 const ile = socionics.getTypeByMbti('ENTp');
 console.log(ile.code); // 'ILE'
 
-// Get quadra, club, temperament — by type code or group name
+// Get quadra, club, temperament: by type code or group name
 socionics.getQuadra('LII');       // Alpha quadra object
 socionics.getClub('Researcher');  // Researcher club object
 socionics.getTemperament('IJ');   // IJ temperament object
 ```
+
+---
+
+## API at a glance
+
+| Area | Functions |
+|------|-----------|
+| Types | `getType`, `getAllTypes`, `getTypeByMbti` |
+| Functions | `getFunction`, `getAllFunctions` |
+| Relations | `getRelation`, `getRelationsFor`, `getTypesByRelation` |
+| Groups | `getQuadra`, `getClub`, `getTemperament`, `getAllGroups` |
+| Dichotomies | `getDichotomy`, `getAllDichotomies`, `getTypesByPole` |
+| Raw data | `data` (`types`, `relations`, `functions`, `groups`, `dichotomies`) |
 
 ---
 
@@ -99,7 +112,7 @@ getType('LII')  // or 'lii', 'Lii'
     { position: 5, block: 'Super-id',  role: 'Suggestive',   code: 'Fe' },
     { position: 6, block: 'Super-id',  role: 'Mobilising',   code: 'Si' },
     { position: 7, block: 'Id',        role: 'Ignoring',     code: 'Te' },
-    { position: 8, block: 'Id',        role: 'Demonstrative','code': 'Ni' }
+    { position: 8, block: 'Id',        role: 'Demonstrative', code: 'Ni' }
   ]
 }
 ```
@@ -128,7 +141,7 @@ Returns the function object for a code (`'Ne'`, `'Ti'`, `'Fe'` etc).
 }
 ```
 
-The `slide` field is the SLIDE attitude name — a secondary descriptive label for each function used in socionics theory.
+The `slide` field is the SLIDE attitude name, a secondary descriptive label for each function used in socionics theory.
 
 #### `getAllFunctions()` → object[]
 Returns all 8 function objects as an array.
@@ -321,11 +334,11 @@ data.dichotomies // all 15 dichotomies keyed by id
 
 ## Background
 
-Socionics is a theory of personality and interpersonal relations developed by Aušra Augustinavičiūtė in the 1970s, building on Carl Jung's work on psychological types. It shares the familiar 16-type structure with MBTI but takes a different road — the function ordering differs, and the intertype relations system has no MBTI equivalent.
+Socionics is a theory of personality and interpersonal relations developed by Aušra Augustinavičiūtė in the 1970s, building on Carl Jung's work on psychological types. It shares the familiar 16-type structure with MBTI but takes a different road: the function ordering differs, and the intertype relations system has no MBTI equivalent.
 
-For human-readable explanations of every type, function and relation, see **[socionicsinsight.com](https://www.socionicsinsight.com)**.
+For human-readable explanations of every type, function and relation, see **[socionicsinsight.com](https://www.socionicsinsight.com)**. The package's page on the site is [socionicsinsight.com/open-source/](https://www.socionicsinsight.com/open-source/).
 
-For a plain-English introduction to socionics, see the *Socionics Made Simple* Kindle series: [amazon.com/dp/B0XXXXX](https://amzn.to/4rDcbmW).
+For a plain-English introduction to socionics, see the *Socionics Made Simple* Kindle series [on Amazon](https://amzn.to/4rDcbmW).
 
 ---
 
