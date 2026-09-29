@@ -1,4 +1,17 @@
 {
+  "sources": {
+    "kovalenko-zvonaryova-2020": {
+      "authors": [
+        "R.K. Kovalenko",
+        "N.A. Zvonaryova"
+      ],
+      "title": "Sotsionika: polnyy kurs lektsiy",
+      "titleEn": "Socionics: A Complete Lecture Course",
+      "publisher": "NITs Sotsionicheskogo Analiza / SibAK, Novosibirsk",
+      "year": 2020,
+      "chapter": 12
+    }
+  },
   "metadata": {
     "identity": {
       "name": "Identity",
@@ -6,7 +19,16 @@
       "rhythm": "Rhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",
-      "description": "Two people of the same type. Deep understanding but no complementarity — neither can offer what the other lacks."
+      "description": "Two people of the same type. Deep understanding but no complementarity — neither can offer what the other lacks.",
+      "stabilityConditions": {
+        "task": "Learning, passing on experience and self-knowledge",
+        "distance": {
+          "rank": 3,
+          "label": "medium"
+        },
+        "note": "Can be close in teacher and student settings; otherwise medium, as competition sets in.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "dual": {
       "name": "Dual",
@@ -14,7 +36,15 @@
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
-      "description": "The most complementary relation. Each partner's strengths meet the other's needs with no conscious effort required."
+      "description": "The most complementary relation. Each partner's strengths meet the other's needs with no conscious effort required.",
+      "stabilityConditions": {
+        "task": "Recovery: restoring energy and lowering anxiety",
+        "distance": {
+          "rank": 1,
+          "label": "closest"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "activation": {
       "name": "Activation",
@@ -22,7 +52,16 @@
       "rhythm": "Arrhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
-      "description": "Stimulating and energising in short bursts. Shared values but mismatched rhythms make sustained close contact tiring."
+      "description": "Stimulating and energising in short bursts. Shared values but mismatched rhythms make sustained close contact tiring.",
+      "stabilityConditions": {
+        "task": "Quick rest and recharge, and getting motivated to work",
+        "distance": {
+          "rank": 2,
+          "label": "close"
+        },
+        "note": "Works best alternating close and distant periods; sustained closeness overheats the relation.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "mirror": {
       "name": "Mirror",
@@ -30,7 +69,15 @@
       "rhythm": "Arrhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",
-      "description": "Same functions in the top two positions, but swapped. Each sees the other as doing things in the wrong order."
+      "description": "Same functions in the top two positions, but swapped. Each sees the other as doing things in the wrong order.",
+      "stabilityConditions": {
+        "task": "Constructive criticism and getting out of a creative rut",
+        "distance": {
+          "rank": 3,
+          "label": "medium"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "kindred": {
       "name": "Kindred",
@@ -38,7 +85,15 @@
       "rhythm": "Rhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",
-      "description": "Same leading function aimed at different values — the pair sits in different quadras. Easy rapport but a subtle competitive edge beneath the surface."
+      "description": "Same leading function aimed at different values — the pair sits in different quadras. Easy rapport but a subtle competitive edge beneath the surface.",
+      "stabilityConditions": {
+        "task": "Finding rest together",
+        "distance": {
+          "rank": 4,
+          "label": "more than medium"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "semidual": {
       "name": "Semi-dual",
@@ -46,7 +101,15 @@
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
-      "description": "Partial complementarity. Initially promising — feels like a dual — but key needs remain unmet over time."
+      "description": "Partial complementarity. Initially promising — feels like a dual — but key needs remain unmet over time.",
+      "stabilityConditions": {
+        "task": "Helping each other form a picture of the world",
+        "distance": {
+          "rank": 2,
+          "label": "close"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "business": {
       "name": "Business",
@@ -54,7 +117,15 @@
       "rhythm": "Rhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",
-      "description": "Efficient and effective working partners. Little personal warmth but high mutual respect for competence."
+      "description": "Efficient and effective working partners. Little personal warmth but high mutual respect for competence.",
+      "stabilityConditions": {
+        "task": "Mutual help at work",
+        "distance": {
+          "rank": 3,
+          "label": "medium"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "quasiIdentity": {
       "name": "Quasi-identity",
@@ -62,7 +133,15 @@
       "rhythm": "Arrhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
-      "description": "Superficially similar but fundamentally different goals. Interesting in theory; frustrating in practice."
+      "description": "Superficially similar but fundamentally different goals. Interesting in theory; frustrating in practice.",
+      "stabilityConditions": {
+        "task": "Fighting external circumstances and getting through crises",
+        "distance": {
+          "rank": 4,
+          "label": "more than medium"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "benefaction": {
       "name": "Benefaction",
@@ -70,7 +149,24 @@
       "rhythm": "Arrhythmic",
       "vibe": "Attractive",
       "symmetry": "Asymmetrical",
-      "description": "One partner consistently gives; the other receives. The benefactor feels useful; the beneficiary may feel subtly patronised."
+      "description": "One partner consistently gives; the other receives. The benefactor feels useful; the beneficiary may feel subtly patronised.",
+      "stabilityConditions": {
+        "task": {
+          "benefactor": "Delegating: setting tasks, motivating and checking results",
+          "beneficiary": "Accepting the world: taking on motivation and heeding others' principles"
+        },
+        "distance": {
+          "benefactor": {
+            "rank": 3,
+            "label": "medium"
+          },
+          "beneficiary": {
+            "rank": 2,
+            "label": "close"
+          }
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "supervision": {
       "name": "Supervision",
@@ -78,7 +174,24 @@
       "rhythm": "Arrhythmic",
       "vibe": "Repulsive",
       "symmetry": "Asymmetrical",
-      "description": "One partner monitors the other. The supervisor sees clear flaws; the supervisee feels persistently watched and corrected."
+      "description": "One partner monitors the other. The supervisor sees clear flaws; the supervisee feels persistently watched and corrected.",
+      "stabilityConditions": {
+        "task": {
+          "supervisor": "Gaining control over their own abilities",
+          "supervisee": "Building personal boundaries"
+        },
+        "distance": {
+          "supervisor": {
+            "rank": 3,
+            "label": "medium"
+          },
+          "supervisee": {
+            "rank": 6,
+            "label": "farthest"
+          }
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "superEgo": {
       "name": "Super-ego",
@@ -86,7 +199,15 @@
       "rhythm": "Rhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",
-      "description": "Mutual respect at a distance. Each admires the other's strengths but finds close contact draining and morally uncomfortable."
+      "description": "Mutual respect at a distance. Each admires the other's strengths but finds close contact draining and morally uncomfortable.",
+      "stabilityConditions": {
+        "task": "Coping with complete uncertainty",
+        "distance": {
+          "rank": 5,
+          "label": "far"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "extinguishment": {
       "name": "Extinguishment",
@@ -94,7 +215,15 @@
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
-      "description": "Initially very similar in approach. Over time each partner gradually suppresses what is unique in the other."
+      "description": "Initially very similar in approach. Over time each partner gradually suppresses what is unique in the other.",
+      "stabilityConditions": {
+        "task": "Keeping motivation and interest in each other",
+        "distance": {
+          "rank": 3,
+          "label": "medium"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "mirage": {
       "name": "Mirage",
@@ -102,7 +231,15 @@
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
-      "description": "Comfortable and pleasant. Each partner creates a slightly idealised version of the other that never quite resolves."
+      "description": "Comfortable and pleasant. Each partner creates a slightly idealised version of the other that never quite resolves.",
+      "stabilityConditions": {
+        "task": "Helping each other adapt to the world and easing work anxiety",
+        "distance": {
+          "rank": 2,
+          "label": "close"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "conflict": {
       "name": "Conflict",
@@ -110,7 +247,15 @@
       "rhythm": "Arrhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",
-      "description": "The most difficult relation. Each partner's leading function directly challenges the other's most vulnerable point."
+      "description": "The most difficult relation. Each partner's leading function directly challenges the other's most vulnerable point.",
+      "stabilityConditions": {
+        "task": "Actively helping the wider world together",
+        "distance": {
+          "rank": 5,
+          "label": "far"
+        },
+        "source": "kovalenko-zvonaryova-2020"
+      }
     }
   },
   "byType": {
