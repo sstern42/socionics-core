@@ -10,7 +10,7 @@
     },
     "dual": {
       "name": "Dual",
-      "orientation": "Hetroverted",
+      "orientation": "Heteroverted",
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
@@ -26,7 +26,7 @@
     },
     "mirror": {
       "name": "Mirror",
-      "orientation": "Hetroverted",
+      "orientation": "Heteroverted",
       "rhythm": "Arrhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",
@@ -42,7 +42,7 @@
     },
     "semidual": {
       "name": "Semi-dual",
-      "orientation": "Hetroverted",
+      "orientation": "Heteroverted",
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
@@ -74,7 +74,7 @@
     },
     "supervision": {
       "name": "Supervision",
-      "orientation": "Hetroverted",
+      "orientation": "Heteroverted",
       "rhythm": "Arrhythmic",
       "vibe": "Repulsive",
       "symmetry": "Asymmetrical",
@@ -90,7 +90,7 @@
     },
     "extinguishment": {
       "name": "Extinguishment",
-      "orientation": "Hetroverted",
+      "orientation": "Heteroverted",
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
@@ -98,7 +98,7 @@
     },
     "mirage": {
       "name": "Mirage",
-      "orientation": "Hetroverted",
+      "orientation": "Heteroverted",
       "rhythm": "Rhythmic",
       "vibe": "Attractive",
       "symmetry": "Symmetrical",
@@ -106,7 +106,7 @@
     },
     "conflict": {
       "name": "Conflict",
-      "orientation": "Hetroverted",
+      "orientation": "Heteroverted",
       "rhythm": "Arrhythmic",
       "vibe": "Repulsive",
       "symmetry": "Symmetrical",

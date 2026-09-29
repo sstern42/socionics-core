@@ -63,7 +63,7 @@ assert('returns 8 functions',          getAllFunctions().length === 8);
 section('getRelation() — symmetric');
 const dual = getRelation('LII', 'ESE');
 assert('LII-ESE is dual',              dual.relation === 'dual');
-assert('dual is hetroverted',          dual.orientation === 'Hetroverted');
+assert('dual is heteroverted',          dual.orientation === 'Heteroverted');
 assert('dual is rhythmic',             dual.rhythm === 'Rhythmic');
 assert('dual is attractive',           dual.vibe === 'Attractive');
 assert('dual is symmetrical',          dual.symmetry === 'Symmetrical');

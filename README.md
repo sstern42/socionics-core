@@ -26,7 +26,7 @@ console.log(lii.functions[4].code); // 'Fe' (Suggestive)
 // Get the relation between two types
 const rel = socionics.getRelation('LII', 'ESE');
 console.log(rel.name);        // 'Dual'
-console.log(rel.orientation); // 'Hetroverted'
+console.log(rel.orientation); // 'Heteroverted'
 console.log(rel.rhythm);      // 'Rhythmic'
 console.log(rel.vibe);        // 'Attractive'
 
@@ -160,7 +160,7 @@ Returns the intertype relation between two types. Handles both directions of asy
   name: 'Dual',            // display name
   from: 'LII',
   to: 'ESE',
-  orientation: 'Hetroverted',  // or 'Monoverted'
+  orientation: 'Heteroverted',  // or 'Monoverted'
   rhythm: 'Rhythmic',          // or 'Arrhythmic'
   vibe: 'Attractive',          // or 'Repulsive'
   symmetry: 'Symmetrical',     // or 'Asymmetrical'
@@ -314,21 +314,21 @@ data.dichotomies // all 15 dichotomies keyed by id
 | Relation | Orientation | Rhythm | Vibe | Symmetry |
 |----------|-------------|--------|------|----------|
 | Identity | Monoverted | Rhythmic | Repulsive | Symmetrical |
-| Dual | Hetroverted | Rhythmic | Attractive | Symmetrical |
+| Dual | Heteroverted | Rhythmic | Attractive | Symmetrical |
 | Activation | Monoverted | Arrhythmic | Attractive | Symmetrical |
-| Mirror | Hetroverted | Arrhythmic | Repulsive | Symmetrical |
+| Mirror | Heteroverted | Arrhythmic | Repulsive | Symmetrical |
 | Kindred | Monoverted | Rhythmic | Repulsive | Symmetrical |
-| Semi-dual | Hetroverted | Rhythmic | Attractive | Symmetrical |
+| Semi-dual | Heteroverted | Rhythmic | Attractive | Symmetrical |
 | Business | Monoverted | Rhythmic | Repulsive | Symmetrical |
 | Quasi-identity | Monoverted | Arrhythmic | Attractive | Symmetrical |
 | Benefactor | Monoverted | Arrhythmic | Attractive | **Asymmetrical** |
 | Beneficiary | Monoverted | Arrhythmic | Attractive | **Asymmetrical** |
-| Supervisor | Hetroverted | Arrhythmic | Repulsive | **Asymmetrical** |
-| Supervisee | Hetroverted | Arrhythmic | Repulsive | **Asymmetrical** |
+| Supervisor | Heteroverted | Arrhythmic | Repulsive | **Asymmetrical** |
+| Supervisee | Heteroverted | Arrhythmic | Repulsive | **Asymmetrical** |
 | Super-ego | Monoverted | Rhythmic | Repulsive | Symmetrical |
-| Extinguishment | Hetroverted | Rhythmic | Attractive | Symmetrical |
-| Mirage | Hetroverted | Rhythmic | Attractive | Symmetrical |
-| Conflict | Hetroverted | Arrhythmic | Repulsive | Symmetrical |
+| Extinguishment | Heteroverted | Rhythmic | Attractive | Symmetrical |
+| Mirage | Heteroverted | Rhythmic | Attractive | Symmetrical |
+| Conflict | Heteroverted | Arrhythmic | Repulsive | Symmetrical |
 
 ---
 
