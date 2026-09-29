@@ -88,7 +88,7 @@ const DIRECTIONAL_MAP = {
  *
  * @example
  * getRelation('LII', 'ESE')
- * // { relation: 'dual', name: 'Dual', from: 'LII', to: 'ESE', orientation: 'Hetroverted', ... }
+ * // { relation: 'dual', name: 'Dual', from: 'LII', to: 'ESE', orientation: 'Heteroverted', ... }
  *
  * @example
  * getRelation('ILE', 'EIE')
