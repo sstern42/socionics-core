@@ -1,0 +1,5 @@
+# Changelog
+
+## 1.2.0
+
+- Added stability_conditions (natural task and comfortable distance) to all relations, sourced from Kovalenko and Zvonaryova (2020). Stored as `stabilityConditions` on each entry in `data/relations.json` `metadata`, with the citation in a new top-level `sources` map.

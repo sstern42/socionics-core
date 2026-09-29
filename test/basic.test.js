@@ -87,6 +87,30 @@ const sup1 = getRelation('ILE', 'LSI');
 assert('ILE supervises LSI',           sup1.relation === 'supervision');
 assert('ILE is supervisor',            sup1.direction.supervisor === 'ILE');
 
+section('stabilityConditions');
+const { data } = require('../index.js');
+const DISTANCE_LABELS = { 1: 'closest', 2: 'close', 3: 'medium', 4: 'more than medium', 5: 'far', 6: 'farthest' };
+const ROLES = { benefaction: ['benefactor', 'beneficiary'], supervision: ['supervisor', 'supervisee'] };
+const validDistance = d => d && Number.isInteger(d.rank) && DISTANCE_LABELS[d.rank] === d.label &&
+                           Object.keys(d).length === 2;
+const relMeta = Object.entries(data.relations.metadata);
+assert('14 relations in metadata',     relMeta.length === 14);
+assert('every relation has one',       relMeta.every(([, m]) => m.stabilityConditions));
+assert('every source key resolves',    relMeta.every(([, m]) =>
+  data.relations.sources[m.stabilityConditions.source]));
+assert('symmetric: string task, valid distance', relMeta.filter(([k]) => !ROLES[k]).every(([, m]) =>
+  typeof m.stabilityConditions.task === 'string' && validDistance(m.stabilityConditions.distance)));
+assert('asymmetric: both roles, valid distances', Object.entries(ROLES).every(([k, roles]) => {
+  const sc = data.relations.metadata[k].stabilityConditions;
+  return roles.every(r => typeof sc.task[r] === 'string' && validDistance(sc.distance[r])) &&
+         Object.keys(sc.task).length === 2 && Object.keys(sc.distance).length === 2;
+}));
+assert('role keys match byType keys',  Object.values(ROLES).flat().every(r => r in data.relations.byType.ILE));
+assert('notes are strings if present', relMeta.every(([, m]) =>
+  !('note' in m.stabilityConditions) || typeof m.stabilityConditions.note === 'string'));
+assert('dual is closest',              dual.stabilityConditions.distance.rank === 1);
+assert('supervisee is farthest',       sup1.stabilityConditions.distance.supervisee.label === 'farthest');
+
 section('getRelationsFor()');
 const liiRels = getRelationsFor('LII');
 assert('returns 16 relation entries',  liiRels.length === 16);

@@ -164,7 +164,8 @@ Returns the intertype relation between two types. Handles both directions of asy
   rhythm: 'Rhythmic',          // or 'Arrhythmic'
   vibe: 'Attractive',          // or 'Repulsive'
   symmetry: 'Symmetrical',     // or 'Asymmetrical'
-  description: '...'
+  description: '...',
+  stabilityConditions: { ... } // see Stability conditions below
 }
 ```
 
@@ -184,6 +185,43 @@ For asymmetric relations a `direction` field is added:
   ...
 }
 ```
+
+#### Stability conditions
+
+Every relation also carries a `stabilityConditions` object: the task the relation naturally serves, and the psychological distance at which it is most comfortable.
+
+```js
+// getRelation('LII', 'ESE').stabilityConditions
+{
+  task: 'Recovery: restoring energy and lowering anxiety',
+  distance: { rank: 1, label: 'closest' },
+  source: 'kovalenko-zvonaryova-2020'
+}
+```
+
+- `task`: a short string.
+- `distance`: `rank` is an integer from 1 to 6, and `label` is fixed by the rank: 1 `closest`, 2 `close`, 3 `medium`, 4 `more than medium`, 5 `far`, 6 `farthest`.
+- `note`: present only on some relations (Activation, Identity), where the source qualifies the distance.
+- `source`: a key into the top-level `sources` map in `data/relations.json`, which holds the full citation.
+
+For benefaction and supervision, `task` and `distance` are keyed by role, using the same role keys as `byType` (`benefactor` / `beneficiary`, `supervisor` / `supervisee`):
+
+```js
+// data.relations.metadata.supervision.stabilityConditions
+{
+  task: {
+    supervisor: 'Gaining control over their own abilities',
+    supervisee: 'Building personal boundaries'
+  },
+  distance: {
+    supervisor: { rank: 3, label: 'medium' },
+    supervisee: { rank: 6, label: 'farthest' }
+  },
+  source: 'kovalenko-zvonaryova-2020'
+}
+```
+
+Unlike the relation pairs and the orientation, rhythm, vibe and symmetry properties, which follow from the structure of Model A, `stabilityConditions` is one school's interpretation. It comes from chapter 12 of R.K. Kovalenko and N.A. Zvonaryova, *Sotsionika: polnyy kurs lektsiy* (*Socionics: A Complete Lecture Course*), Novosibirsk, 2020, and is attributed through its `source` key. Other authors rank and describe these relations differently.
 
 #### `getRelationsFor(code)` → object[]
 Returns all 16 intertype relation objects for a given type (including identity).
@@ -278,7 +316,7 @@ Returns the 8 types on one pole, e.g. `getTypesByPole('Positivist')`.
 ```js
 const { data } = require('socionics-core');
 data.types     // all 16 type objects keyed by code
-data.relations // byType lookup + relation metadata
+data.relations // byType lookup, relation metadata, and sources cited by stabilityConditions
 data.functions // all 8 function objects keyed by code
 data.groups    // quadras, clubs, temperaments
 data.dichotomies // all 15 dichotomies keyed by id
