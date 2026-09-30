@@ -1,6 +1,6 @@
 # socionics-core
 
-Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, 15 dichotomies, quadras, clubs and temperaments, structured for use in any JavaScript project.
+Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, 15 dichotomies, quadras, clubs, temperaments and five work-related small groups, structured for use in any JavaScript project.
 
 No dependencies. No build step. Works in Node.js 12+.
 
@@ -87,6 +87,9 @@ getType('LII')  // or 'lii', 'Lii'
   communicationStyle: 'Cool',
   stimulus: 'Confident',
   argumentation: 'Constructor',
+  stressGroup: 'Trainable',
+  implementationGroup: 'Resultator',
+  planningStyle: 'Stable',
   dichotomies: {
     extraversionIntroversion: 'Introverted',
     intuitionSensing: 'Intuitive',
@@ -258,11 +261,70 @@ Accepts a type code (`'LII'`) or quadra name (`'Alpha'`).
 #### `getClub(codeOrName)` → object
 Accepts a type code or club name (`'Researcher'`, `'Socializer'`, `'Pragmatist'`, `'Humanitarian'`).
 
+Each club carries a `workProfile`: what the club handles in detail, what it handles only on the surface, and the fields it suits.
+
+```js
+// getClub('Pragmatist').workProfile
+{
+  formula: ['Logical', 'Sensing', 'Aristocratic'],
+  detailed: ['Logical systems within production', 'Hierarchical management', ...],
+  surface: ['Relationships', 'Emotional atmosphere', ...],
+  fields: ['Setting up processes', 'Production', ...],
+  summary: 'Understand equipment in detail and set up production with every practical detail accounted for.',
+  bookName: 'Managers',   // only where the source names the club differently
+  source: 'kovalenko-zvonaryova-2020'
+}
+```
+
+`data.groups.clubsNote` holds the source's caveat that clubs describe abilities, not interests or chosen field.
+
 #### `getTemperament(codeOrName)` → object
 Accepts a type code or temperament code (`'EP'`, `'EJ'`, `'IP'`, `'IJ'`).
 
+Each temperament carries a `goalSetting` object with the source's name and description for it as a goal-setting group (`EJ` Linear-assertive, `IJ` Balanced-stable, `EP` Flexible-manoeuvring, `IP` Receptive-adaptive). Membership is the temperament's own `types`. `data.groups.goalSettingNote` describes the grouping.
+
+```js
+// getTemperament('EJ').goalSetting
+{
+  name: 'Linear-assertive',
+  formula: ['Rational', 'Extraverted', 'Dynamic'],
+  description: 'One goal, aimed at the outside world. ...',
+  source: 'kovalenko-zvonaryova-2020'
+}
+```
+
 #### `getAllGroups()` → object
-Returns the raw groups data containing all quadras, clubs and temperaments.
+Returns the raw groups data: quadras, clubs and temperaments, the four work-group definitions below, the notes, and the `sources` map.
+
+#### Work groups
+
+Four further small groups describe how a type works. Each is a top-level object in `data/groups.json` holding a `groupNote` string and four definitions keyed by name. The type field that stores membership is listed alongside.
+
+| Key in `data.groups` | Groups | Type field |
+|----------------------|--------|------------|
+| `stressResistance` | Fragile, Viscous, Trainable, Flexible | `stressGroup` |
+| `implementation` | Perfectionist, Finisher, Implementer, Resultator | `implementationGroup` |
+| `planningStyle` | Stable, Staged, Variant, Free | `planningStyle` |
+| `leadershipStyle` | Constructor, Guardian, Restructurer, Diplomat | `argumentation` |
+
+The fifth, goal-setting, is stored on the temperaments (see `getTemperament` above).
+
+```js
+// data.groups.planningStyle.Stable
+{
+  name: 'Stable',
+  formula: ['Rational', 'Farsighted', 'Judicious'],
+  types: ['LII', 'ESE', 'EII', 'LSE'],
+  description: 'Set goals in sequence and plan ahead, anticipating how things will unfold. ...',
+  source: 'kovalenko-zvonaryova-2020'
+}
+```
+
+- `formula`: the dichotomy poles that define the group. A type belongs to the group exactly when its `dichotomies` include all three. Each formula splits the 16 types into four groups of four, and the tests check that `types` and the type field agree with it.
+- `altName`: `leadershipStyle` only. Sergei Savchenko's Tarot suit names (Pentacles, Staves, Swords, Cups), a memory aid rather than part of the theory.
+- When iterating a group's definitions, skip the `groupNote` key.
+
+Unlike quadras, clubs, temperaments and the dichotomies, which follow from the structure of Model A, the club `workProfile`, the `goalSetting` descriptions and the four work groups above are one school's interpretation. They come from chapter 11 of R.K. Kovalenko and N.A. Zvonaryova, *Sotsionika: polnyy kurs lektsiy* (*Socionics: A Complete Lecture Course*), Novosibirsk, 2020, and are attributed through their `source` key, which points into the top-level `sources` map in `data/groups.json`. The authors base the stress-resistance and implementation descriptions on their own resonance-group experiments.
 
 ---
 
@@ -318,7 +380,7 @@ const { data } = require('socionics-core');
 data.types     // all 16 type objects keyed by code
 data.relations // byType lookup, relation metadata, and sources cited by stabilityConditions
 data.functions // all 8 function objects keyed by code
-data.groups    // quadras, clubs, temperaments
+data.groups    // quadras, clubs, temperaments, work groups, and sources cited by them
 data.dichotomies // all 15 dichotomies keyed by id
 ```
 

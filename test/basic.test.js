@@ -143,6 +143,56 @@ assert('IJ contains LII',              ij.types.includes('LII'));
 const ijFromType = getTemperament('LII');
 assert('lookup by type code works',    ijFromType.name === 'IJ');
 
+section('club work profiles');
+const groupSource = key => data.groups.sources && data.groups.sources[key];
+const isStrArr = a => Array.isArray(a) && a.length > 0 && a.every(s => typeof s === 'string');
+const clubs = Object.values(data.groups.clubs);
+const hasPoles = (t, formula) => formula.every(p => Object.values(t.dichotomies).includes(p));
+assert('groups source is chapter 11',  groupSource('kovalenko-zvonaryova-2020').chapter === 11);
+assert('clubsNote is a string',        typeof data.groups.clubsNote === 'string');
+assert('every club has a workProfile', clubs.every(c => c.workProfile &&
+  ['formula', 'detailed', 'surface', 'fields'].every(k => isStrArr(c.workProfile[k])) &&
+  typeof c.workProfile.summary === 'string' && groupSource(c.workProfile.source)));
+assert('club formula matches types',   clubs.every(c => c.types.slice().sort().join() ===
+  all.filter(t => hasPoles(t, c.workProfile.formula)).map(t => t.code).sort().join()));
+
+// Work groups: each partitions the 16 types into 4 groups of 4, and the stored
+// membership (group `types` and the per-type field) is its formula applied to
+// the type's dichotomies. leadershipStyle is stored on types as `argumentation`.
+section('work groups');
+const WORK_GROUPS = {
+  stressResistance: 'stressGroup',
+  implementation:   'implementationGroup',
+  planningStyle:    'planningStyle',
+  leadershipStyle:  'argumentation'
+};
+Object.entries(WORK_GROUPS).forEach(([key, field]) => {
+  const grp = data.groups[key];
+  const entries = Object.entries(grp).filter(([k]) => k !== 'groupNote');
+  const byFormula = e => all.filter(t => hasPoles(t, e.formula)).map(t => t.code);
+  assert(`${key}: groupNote and 4 groups`, typeof grp.groupNote === 'string' && entries.length === 4 &&
+    entries.every(([k, e]) => e.name === k && typeof e.description === 'string' && groupSource(e.source)));
+  assert(`${key}: 4 types per group`,      entries.every(([, e]) => byFormula(e).length === 4 && e.types.length === 4));
+  assert(`${key}: each type in one group`, all.every(t => entries.filter(([, e]) => hasPoles(t, e.formula)).length === 1));
+  assert(`${key}: types match formula`,    entries.every(([, e]) =>
+    e.types.slice().sort().join() === byFormula(e).sort().join()));
+  assert(`${key}: type.${field} matches`,  all.every(t => {
+    const match = entries.find(([, e]) => hasPoles(t, e.formula));
+    return match && t[field] === match[0];
+  }));
+});
+
+// goalSetting lives on the temperaments; membership is the temperament's types.
+const temps = Object.entries(data.groups.temperaments);
+assert('goalSettingNote is a string',  typeof data.groups.goalSettingNote === 'string');
+assert('goalSetting: 4 distinct names', new Set(temps.map(([, t]) => t.goalSetting.name)).size === 4 &&
+  temps.every(([, t]) => typeof t.goalSetting.description === 'string' && groupSource(t.goalSetting.source)));
+assert('goalSetting: each type in one', all.every(t =>
+  temps.filter(([, tm]) => hasPoles(t, tm.goalSetting.formula)).length === 1));
+assert('goalSetting: matches temperaments', temps.every(([k, tm]) =>
+  tm.types.slice().sort().join() === all.filter(t => hasPoles(t, tm.goalSetting.formula)).map(t => t.code).sort().join() &&
+  tm.types.every(c => getType(c).temperament === k)));
+
 // ─── Dichotomies ─────────────────────────────────────────────────────────────
 section('getAllDichotomies()');
 const dichs = getAllDichotomies();

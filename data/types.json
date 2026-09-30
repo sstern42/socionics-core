@@ -12,6 +12,9 @@
     "communicationStyle": "Firm",
     "stimulus": "Distinguished",
     "argumentation": "Restructurer",
+    "stressGroup": "Viscous",
+    "implementationGroup": "Perfectionist",
+    "planningStyle": "Free",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -53,6 +56,9 @@
     "communicationStyle": "Cool",
     "stimulus": "Confident",
     "argumentation": "Constructor",
+    "stressGroup": "Trainable",
+    "implementationGroup": "Resultator",
+    "planningStyle": "Stable",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -94,6 +100,9 @@
     "communicationStyle": "Passionate",
     "stimulus": "Esteemed",
     "argumentation": "Guardian",
+    "stressGroup": "Trainable",
+    "implementationGroup": "Implementer",
+    "planningStyle": "Stable",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -135,6 +144,9 @@
     "communicationStyle": "Sincere",
     "stimulus": "Hopeful",
     "argumentation": "Diplomat",
+    "stressGroup": "Viscous",
+    "implementationGroup": "Finisher",
+    "planningStyle": "Free",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",
@@ -176,6 +188,9 @@
     "communicationStyle": "Passionate",
     "stimulus": "Distinguished",
     "argumentation": "Guardian",
+    "stressGroup": "Fragile",
+    "implementationGroup": "Finisher",
+    "planningStyle": "Staged",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -217,6 +232,9 @@
     "communicationStyle": "Sincere",
     "stimulus": "Confident",
     "argumentation": "Diplomat",
+    "stressGroup": "Flexible",
+    "implementationGroup": "Implementer",
+    "planningStyle": "Variant",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -258,6 +276,9 @@
     "communicationStyle": "Firm",
     "stimulus": "Esteemed",
     "argumentation": "Restructurer",
+    "stressGroup": "Flexible",
+    "implementationGroup": "Resultator",
+    "planningStyle": "Variant",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -299,6 +320,9 @@
     "communicationStyle": "Cool",
     "stimulus": "Hopeful",
     "argumentation": "Constructor",
+    "stressGroup": "Fragile",
+    "implementationGroup": "Perfectionist",
+    "planningStyle": "Staged",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",
@@ -340,6 +364,9 @@
     "communicationStyle": "Passionate",
     "stimulus": "Esteemed",
     "argumentation": "Diplomat",
+    "stressGroup": "Viscous",
+    "implementationGroup": "Finisher",
+    "planningStyle": "Variant",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -381,6 +408,9 @@
     "communicationStyle": "Sincere",
     "stimulus": "Hopeful",
     "argumentation": "Guardian",
+    "stressGroup": "Trainable",
+    "implementationGroup": "Implementer",
+    "planningStyle": "Staged",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",
@@ -422,6 +452,9 @@
     "communicationStyle": "Firm",
     "stimulus": "Distinguished",
     "argumentation": "Constructor",
+    "stressGroup": "Trainable",
+    "implementationGroup": "Resultator",
+    "planningStyle": "Staged",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -463,6 +496,9 @@
     "communicationStyle": "Cool",
     "stimulus": "Confident",
     "argumentation": "Restructurer",
+    "stressGroup": "Viscous",
+    "implementationGroup": "Perfectionist",
+    "planningStyle": "Variant",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -504,6 +540,9 @@
     "communicationStyle": "Passionate",
     "stimulus": "Distinguished",
     "argumentation": "Diplomat",
+    "stressGroup": "Flexible",
+    "implementationGroup": "Implementer",
+    "planningStyle": "Free",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -545,6 +584,9 @@
     "communicationStyle": "Sincere",
     "stimulus": "Confident",
     "argumentation": "Guardian",
+    "stressGroup": "Fragile",
+    "implementationGroup": "Finisher",
+    "planningStyle": "Stable",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -586,6 +628,9 @@
     "communicationStyle": "Firm",
     "stimulus": "Esteemed",
     "argumentation": "Constructor",
+    "stressGroup": "Fragile",
+    "implementationGroup": "Perfectionist",
+    "planningStyle": "Stable",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -627,6 +672,9 @@
     "communicationStyle": "Cool",
     "stimulus": "Hopeful",
     "argumentation": "Restructurer",
+    "stressGroup": "Flexible",
+    "implementationGroup": "Resultator",
+    "planningStyle": "Free",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",
