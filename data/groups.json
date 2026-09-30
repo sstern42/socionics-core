@@ -1,4 +1,14 @@
 {
+  "sources": {
+    "kovalenko-zvonaryova-2020": {
+      "authors": ["R.K. Kovalenko", "N.A. Zvonaryova"],
+      "title": "Sotsionika: polnyy kurs lektsiy",
+      "titleEn": "Socionics: A Complete Lecture Course",
+      "publisher": "NITs Sotsionicheskogo Analiza / SibAK, Novosibirsk",
+      "year": 2020,
+      "chapter": 11
+    }
+  },
   "quadras": {
     "Alpha": {
       "name": "Alpha",
@@ -48,7 +58,15 @@
       "types": ["ILE", "LII", "LIE", "ILI"],
       "mbti": ["ENTp", "INTj", "ENTj", "INTp"],
       "theme": "Systematic inquiry and conceptual ingenuity",
-      "description": "NT types combine Intuition and Logic. Driven by systematic inquiry, theoretical modelling and conceptual precision. Alpha NTs approach the world with playful abstraction; Gamma NTs apply it toward competitive, real-world outcomes."
+      "description": "NT types combine Intuition and Logic. Driven by systematic inquiry, theoretical modelling and conceptual precision. Alpha NTs approach the world with playful abstraction; Gamma NTs apply it toward competitive, real-world outcomes.",
+      "workProfile": {
+        "formula": ["Logical", "Intuitive", "Democratic"],
+        "detailed": ["Logical concepts", "Systems, structures and technology", "Managing time and risk", "Seeing people's abilities and potential"],
+        "surface": ["Emotional atmosphere", "Caring for people's physical needs", "Relationships between people"],
+        "fields": ["Research and development", "Design and engineering", "Analysis and forecasting"],
+        "summary": "Strongest on universal laws and general principles: how things are built and why they work.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "Socializer": {
       "name": "Socializer",
@@ -56,7 +74,15 @@
       "types": ["ESE", "SEI", "SEE", "ESI"],
       "mbti": ["ESFj", "ISFp", "ESFp", "ISFj"],
       "theme": "Sympathy and social presence",
-      "description": "SF types combine Sensing and Ethics. Warm, socially present, and attuned to the needs and feelings of others. Alpha SFs seek connection through extroverted Ethics; Gamma SFs maintain harmony through introverted Ethics."
+      "description": "SF types combine Sensing and Ethics. Warm, socially present, and attuned to the needs and feelings of others. Alpha SFs seek connection through extroverted Ethics; Gamma SFs maintain harmony through introverted Ethics.",
+      "workProfile": {
+        "formula": ["Ethical", "Sensing", "Democratic"],
+        "detailed": ["Managing emotional atmosphere", "Caring for people's physical needs", "Relationships between people"],
+        "surface": ["Developing logical concepts", "Managing time and risk", "Seeing people's abilities and potential"],
+        "fields": ["Social care", "Service industries", "Communication and building contacts", "Medicine"],
+        "summary": "Most attuned to what individuals and communities need, and good at running a household.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "Pragmatist": {
       "name": "Pragmatist",
@@ -64,7 +90,16 @@
       "types": ["SLE", "LSI", "LSE", "SLI"],
       "mbti": ["ESTp", "ISTj", "ESTj", "ISTp"],
       "theme": "Practical, matter-of-fact problem solving",
-      "description": "ST types combine Sensing and Logic. Action-oriented realists who prefer results over theory. Beta STs are driven by extroverted Sensing — fast-paced, risk-taking, tactical. Delta STs are driven by introverted Sensing — structured, methodical, grounded."
+      "description": "ST types combine Sensing and Logic. Action-oriented realists who prefer results over theory. Beta STs are driven by extroverted Sensing — fast-paced, risk-taking, tactical. Delta STs are driven by introverted Sensing — structured, methodical, grounded.",
+      "workProfile": {
+        "formula": ["Logical", "Sensing", "Aristocratic"],
+        "detailed": ["Logical systems within production", "Hierarchical management", "Systems, structures and technology", "Technology for making physical things"],
+        "surface": ["Relationships", "Emotional atmosphere", "Tracking current trends", "Seeing people's abilities and potential"],
+        "fields": ["Setting up processes", "Production", "Operating equipment and machinery", "Technical servicing"],
+        "summary": "Understand equipment in detail and set up production with every practical detail accounted for.",
+        "bookName": "Managers",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "Humanitarian": {
       "name": "Humanitarian",
@@ -72,37 +107,199 @@
       "types": ["EIE", "IEI", "IEE", "EII"],
       "mbti": ["ENFj", "INFp", "ENFp", "INFj"],
       "theme": "Enthusiasm for human welfare and meaning",
-      "description": "NF types combine Intuition and Ethics. Idealistic and people-centred, with a concern for the welfare, happiness and spiritual development of others. Beta NFs support unconditionally through introverted Intuition; Delta NFs bring harmony through extroverted Intuition."
+      "description": "NF types combine Intuition and Ethics. Idealistic and people-centred, with a concern for the welfare, happiness and spiritual development of others. Beta NFs support unconditionally through introverted Intuition; Delta NFs bring harmony through extroverted Intuition.",
+      "workProfile": {
+        "formula": ["Ethical", "Intuitive", "Aristocratic"],
+        "detailed": ["Managing emotional atmosphere", "Deep insight into people's abilities", "Tracking current trends"],
+        "surface": ["Logical systems within production", "Hierarchical management", "Technology for making physical things"],
+        "fields": ["Culture and the arts", "Acting", "Psychology and teaching", "Advertising and public relations"],
+        "summary": "Understand people's psychology and their inner needs first.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     }
   },
+  "clubsNote": "Clubs describe abilities, not interests or chosen field. Abilities can be used in any field, or not used at all; what matters most is using your strengths within whatever field you work in.",
   "temperaments": {
     "EP": {
       "name": "EP",
       "fullName": "Extroverted Irrational",
       "types": ["ILE", "SLE", "SEE", "IEE"],
       "mbti": ["ENTp", "ESTp", "ESFp", "ENFp"],
-      "description": "High energy, stimulus-seeking, flexible and spontaneous. Comfortable with ambiguity and change. Can struggle with follow-through and sustained routine."
+      "description": "High energy, stimulus-seeking, flexible and spontaneous. Comfortable with ambiguity and change. Can struggle with follow-through and sustained routine.",
+      "goalSetting": {
+        "name": "Flexible-manoeuvring",
+        "formula": ["Irrational", "Extraverted", "Static"],
+        "description": "Many goals in the outside world. They switch sharply when a more interesting goal appears or the current one gets difficult, and spend energy unevenly.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "EJ": {
       "name": "EJ",
       "fullName": "Extroverted Rational",
       "types": ["ESE", "EIE", "LIE", "LSE"],
       "mbti": ["ESFj", "ENFj", "ENTj", "ESTj"],
-      "description": "Organised, decisive and driven. Natural leaders and initiators. Comfortable taking charge and setting direction. Can be inflexible or overbearing."
+      "description": "Organised, decisive and driven. Natural leaders and initiators. Comfortable taking charge and setting direction. Can be inflexible or overbearing.",
+      "goalSetting": {
+        "name": "Linear-assertive",
+        "formula": ["Rational", "Extraverted", "Dynamic"],
+        "description": "One goal, aimed at the outside world. Energy goes straight at it by the shortest route, with directness in both action and emotion.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "IP": {
       "name": "IP",
       "fullName": "Introverted Irrational",
       "types": ["SEI", "IEI", "ILI", "SLI"],
       "mbti": ["ISFp", "INFp", "INTp", "ISTp"],
-      "description": "Calm, adaptable and self-contained. Comfortable with inaction and observation. Steady under pressure. Can appear passive or disengaged."
+      "description": "Calm, adaptable and self-contained. Comfortable with inaction and observation. Steady under pressure. Can appear passive or disengaged.",
+      "goalSetting": {
+        "name": "Receptive-adaptive",
+        "formula": ["Irrational", "Introverted", "Dynamic"],
+        "description": "Many goals in their inner world, oriented to harmony with how they feel. They adapt mood and activity to keep their comfort steady, and conserve energy.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
     },
     "IJ": {
       "name": "IJ",
       "fullName": "Introverted Rational",
       "types": ["LII", "LSI", "ESI", "EII"],
       "mbti": ["INTj", "ISTj", "ISFj", "INFj"],
-      "description": "Principled, precise and consistent. Strong inner standards and a stable worldview. Reliable but can be rigid or resistant to external feedback."
+      "description": "Principled, precise and consistent. Strong inner standards and a stable worldview. Reliable but can be rigid or resistant to external feedback.",
+      "goalSetting": {
+        "name": "Balanced-stable",
+        "formula": ["Rational", "Introverted", "Static"],
+        "description": "One goal, held in their own inner world. The most methodical and even-paced group, conserving energy and willing to wait, spreading effort evenly over the whole path.",
+        "source": "kovalenko-zvonaryova-2020"
+      }
+    }
+  },
+  "goalSettingNote": "What a type pays attention to first and how it pursues goals. The book's name for the Socionics temperaments.",
+  "stressResistance": {
+    "groupNote": "How a type processes pressure and switches between tasks. The authors base these descriptions on their own resonance-group experiments.",
+    "Fragile": {
+      "name": "Fragile",
+      "formula": ["Rational", "Process", "Aristocratic"],
+      "types": ["EIE", "LSI", "EII", "LSE"],
+      "description": "Feelings are processed in broad, abstract terms and tend to linger. Logic is concrete and detail-heavy, so work reaches a thorough, complete result slowly. Switching between projects is costly; they do best committing to one large project at a time. The most vulnerable to stress, and inclined to avoid emotionally difficult situations in advance.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Viscous": {
+      "name": "Viscous",
+      "formula": ["Irrational", "Process", "Democratic"],
+      "types": ["ILE", "SEI", "SEE", "ILI"],
+      "description": "Physical comfort carries emotional weight, so attachments build up. They handle small stresses well, but once these pile up they find it hard to recover alone and need support from people close to them. Ideas become structures quickly; they may leave a framework unfinished when interest fades, or carry an old idea wholesale into a new task.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Trainable": {
+      "name": "Trainable",
+      "formula": ["Rational", "Result", "Democratic"],
+      "types": ["LII", "ESE", "ESI", "LIE"],
+      "description": "Feelings are grounded quickly into practical action, so they pass fast. Resilient, but less likely to work through a situation in depth. They work quickly towards the result with less attention to fine detail, and can be pulled off a task midway and pick it back up easily.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Flexible": {
+      "name": "Flexible",
+      "formula": ["Irrational", "Result", "Aristocratic"],
+      "types": ["IEI", "SLE", "IEE", "SLI"],
+      "description": "Turn practical detail into schemes, rules and formulas, and are clear about how to fix discomfort or pressure. They pay less attention to detail that isn't key to the task in hand, which can leave tasks unfinished. The most resistant to stress.",
+      "source": "kovalenko-zvonaryova-2020"
+    }
+  },
+  "implementation": {
+    "groupNote": "How a type turns ideas into working output. Used for assembling teams, particularly for brainstorming. The authors base these descriptions on their own resonance-group experiments and note that the model-level formula has not yet been identified.",
+    "Perfectionist": {
+      "name": "Perfectionist",
+      "formula": ["Logical", "Process", "Tactical"],
+      "types": ["ILE", "LSI", "ILI", "LSE"],
+      "description": "Understand technology, rules and cause and effect in detail, and can develop a unique method or production process. Their attention stays on the work itself, refining a specific product through individual effort.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Finisher": {
+      "name": "Finisher",
+      "formula": ["Ethical", "Process", "Strategic"],
+      "types": ["SEI", "EIE", "SEE", "EII"],
+      "description": "Build work on known methods drawn from experience, and aim at a clear target for the finished product or service. They concentrate on one piece of work and take a tailored approach to improving it.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Implementer": {
+      "name": "Implementer",
+      "formula": ["Ethical", "Result", "Tactical"],
+      "types": ["ESE", "IEI", "ESI", "IEE"],
+      "description": "Build work on known methods, adapting an established approach to the specific task in front of them. Their effort goes into effectiveness and a finished result.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Resultator": {
+      "name": "Resultator",
+      "formula": ["Logical", "Result", "Strategic"],
+      "types": ["LII", "SLE", "LIE", "SLI"],
+      "description": "Develop and introduce new technology, aiming at a completed result that works at scale: more output at lower cost.",
+      "source": "kovalenko-zvonaryova-2020"
+    }
+  },
+  "planningStyle": {
+    "groupNote": "How a type plans and handles time. Useful for choosing a comfortable work schedule, assigning and checking work, and resolving disagreements about planning.",
+    "Stable": {
+      "name": "Stable",
+      "formula": ["Rational", "Farsighted", "Judicious"],
+      "types": ["LII", "ESE", "EII", "LSE"],
+      "description": "Set goals in sequence and plan ahead, anticipating how things will unfold. They discuss options in advance and stick closely to the agreed plan.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Staged": {
+      "name": "Staged",
+      "formula": ["Rational", "Carefree", "Decisive"],
+      "types": ["EIE", "LSI", "ESI", "LIE"],
+      "description": "Set goals in sequence and break them into stages. They work well to tight deadlines, take the opportunities a situation offers and aim to finish early, adjusting the plan as they go.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Variant": {
+      "name": "Variant",
+      "formula": ["Irrational", "Farsighted", "Decisive"],
+      "types": ["IEI", "SLE", "SEE", "ILI"],
+      "description": "Think ahead and plan, but run several goals in parallel, each with its own plan. Their plans are built for fast switching and forceful execution, and they move between them as circumstances change.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Free": {
+      "name": "Free",
+      "formula": ["Irrational", "Carefree", "Judicious"],
+      "types": ["ILE", "SEI", "IEE", "SLI"],
+      "description": "Hold many goals at once and wait for the opportunities that changing circumstances bring. Fixed plans are often absent; they manage time situationally to take up as many opportunities as possible.",
+      "source": "kovalenko-zvonaryova-2020"
+    }
+  },
+  "leadershipStyle": {
+    "groupNote": "How a type makes decisions and holds or bends principles. The Tarot suit names are memory aids from Sergei Savchenko, not part of the theory. Stored on types as the existing argumentation field.",
+    "Constructor": {
+      "name": "Constructor",
+      "formula": ["Logical", "Rational", "Emotivist"],
+      "altName": "Pentacles",
+      "types": ["LII", "LSI", "LIE", "LSE"],
+      "description": "Decide by logic and hold firmly to their principles, refining systems until they work as they should. They judge themselves and others by concrete results achieved.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Guardian": {
+      "name": "Guardian",
+      "formula": ["Ethical", "Rational", "Constructivist"],
+      "altName": "Staves",
+      "types": ["ESE", "EIE", "ESI", "EII"],
+      "description": "Decide by ethical categories and hold clear convictions about what is right. They call people back to shared norms and judge others by their intentions and conduct.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Restructurer": {
+      "name": "Restructurer",
+      "formula": ["Logical", "Irrational", "Constructivist"],
+      "altName": "Swords",
+      "types": ["ILE", "SLE", "ILI", "SLI"],
+      "description": "Decide by logic but adjust as circumstances change. They look for the simplest, most efficient route, and quickly reshape rules and methods to suit their goals. Ethical territory can make them uneasy.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Diplomat": {
+      "name": "Diplomat",
+      "formula": ["Ethical", "Irrational", "Emotivist"],
+      "altName": "Cups",
+      "types": ["SEI", "IEI", "SEE", "IEE"],
+      "description": "Decide by ethical categories but adapt them to the situation, keeping everyone comfortable and steering between people's interests. Logical territory can make them uneasy.",
+      "source": "kovalenko-zvonaryova-2020"
     }
   }
 }
