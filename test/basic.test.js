@@ -58,6 +58,11 @@ assert('correct attitude',             ne.attitude === 'Extraverted');
 
 section('getAllFunctions()');
 assert('returns 8 functions',          getAllFunctions().length === 8);
+assert('every function has descriptionLong',
+  getAllFunctions().every(f => typeof f.descriptionLong === 'string' && /^the function of /i.test(f.descriptionLong)));
+assert('every function has descriptionBehaviour',
+  getAllFunctions().every(f => typeof f.descriptionBehaviour === 'string' && f.descriptionBehaviour.startsWith(`Together, ${f.code} is the capacity to`)));
+assert('existing description unchanged',  ne.description === 'Noticing trends and possibilities in a reality filled with unknown opportunities');
 
 // ─── Relations ───────────────────────────────────────────────────────────────
 section('getRelation() — symmetric');

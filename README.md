@@ -140,11 +140,15 @@ Returns the function object for a code (`'Ne'`, `'Ti'`, `'Fe'` etc).
   attitude: 'Extraverted',
   domain: 'Intuition',
   slide: 'Creative Thinking',
-  description: 'Noticing trends and possibilities in a reality filled with unknown opportunities'
+  description: 'Noticing trends and possibilities in a reality filled with unknown opportunities',
+  descriptionLong: 'The function of possibility — building associative maps of what could exist rather than what does.',
+  descriptionBehaviour: 'Together, Ne is the capacity to read the external world for what it *could become* rather than what it currently is.'
 }
 ```
 
 The `slide` field is the SLIDE attitude name, a secondary descriptive label for each function used in socionics theory.
+
+`descriptionLong` and `descriptionBehaviour` are copied verbatim from the function pages on [socionicsinsight.com](https://www.socionicsinsight.com/functions/): `descriptionLong` is the page's opening "the function of…" description and `descriptionBehaviour` is the "Together, … is the capacity to…" summary, which keeps the page's Markdown emphasis.
 
 #### `getAllFunctions()` → object[]
 Returns all 8 function objects as an array.
