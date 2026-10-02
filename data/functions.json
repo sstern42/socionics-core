@@ -5,7 +5,9 @@
     "attitude": "Extraverted",
     "domain": "Intuition",
     "slide": "Creative Thinking",
-    "description": "Noticing trends and possibilities in a reality filled with unknown opportunities"
+    "description": "Noticing trends and possibilities in a reality filled with unknown opportunities",
+    "descriptionLong": "The function of possibility — building associative maps of what could exist rather than what does.",
+    "descriptionBehaviour": "Together, Ne is the capacity to read the external world for what it *could become* rather than what it currently is."
   },
   "Ni": {
     "code": "Ni",
@@ -13,7 +15,9 @@
     "attitude": "Introverted",
     "domain": "Intuition",
     "slide": "Reality Distillation",
-    "description": "Seeing through distortions; having hunches of unfounded truth; the source of unknown ideas"
+    "description": "Seeing through distortions; having hunches of unfounded truth; the source of unknown ideas",
+    "descriptionLong": "The function of long-range pattern — sensing where things are heading before the evidence is in.",
+    "descriptionBehaviour": "Together, Ni is the capacity to perceive the *inner logic of unfolding events* — to sense how a situation is developing and where it must inevitably lead, independent of immediate observable facts."
   },
   "Se": {
     "code": "Se",
@@ -21,7 +25,9 @@
     "attitude": "Extraverted",
     "domain": "Sensing",
     "slide": "Tactical Action",
-    "description": "Living in the moment and accepting reality with a just-react response"
+    "description": "Living in the moment and accepting reality with a just-react response",
+    "descriptionLong": "The function of physical and social dominance — an immediate, commanding presence in the here and now.",
+    "descriptionBehaviour": "Together, Se is the capacity to perceive the *immediate physical and social landscape* — who holds power, what is real, what is happening right now, and how to act decisively within it."
   },
   "Si": {
     "code": "Si",
@@ -29,7 +35,9 @@
     "attitude": "Introverted",
     "domain": "Sensing",
     "slide": "Dynamic Stabilisation",
-    "description": "Anchoring oneself to safe bets in a world that feels inherently chaotic"
+    "description": "Anchoring oneself to safe bets in a world that feels inherently chaotic",
+    "descriptionLong": "the function of settled experience. Physical comfort, wellbeing, and a keen sense of when things drift from the known and proven.",
+    "descriptionBehaviour": "Together, Si is the capacity to perceive how comfortable and settled experience is, physically and in daily life, and to notice whenever it drifts from what is known and trusted."
   },
   "Fe": {
     "code": "Fe",
@@ -37,7 +45,9 @@
     "attitude": "Extraverted",
     "domain": "Ethics",
     "slide": "Social Interest",
-    "description": "Concern for the roles people play and how we relate in a shared social world"
+    "description": "Concern for the roles people play and how we relate in a shared social world",
+    "descriptionLong": "The function of emotional atmosphere — an active awareness of any group's feeling-state and a drive to shape it.",
+    "descriptionBehaviour": "Together, Fe is the capacity to *perceive, generate and manage emotional atmosphere* — to read the emotional state of a room and to deliberately influence it."
   },
   "Fi": {
     "code": "Fi",
@@ -45,7 +55,9 @@
     "attitude": "Introverted",
     "domain": "Ethics",
     "slide": "Ethical Harmony",
-    "description": "Concern for harmony between self and others; the rational attitude of moral values"
+    "description": "Concern for harmony between self and others; the rational attitude of moral values",
+    "descriptionLong": "The function of personal moral conviction — a deep, stable sense of what is right that needs no external validation.",
+    "descriptionBehaviour": "Together, Fi is the capacity to *perceive and evaluate the quality of personal relationships and inner moral states* — a quiet, stable inner map of who people are, what they mean, and whether their actions align with deeply-held values."
   },
   "Te": {
     "code": "Te",
@@ -53,7 +65,9 @@
     "attitude": "Extraverted",
     "domain": "Logic",
     "slide": "Practical Results",
-    "description": "Seeking practical, externally predictable results through decisive decision-making"
+    "description": "Seeking practical, externally predictable results through decisive decision-making",
+    "descriptionLong": "The function of results — converting possibility into measurable outcome through decisive, efficient action.",
+    "descriptionBehaviour": "Together, Te is the capacity to perceive *what works, what is factually accurate and how to organise external activity efficiently* — a rational evaluation of the objective, practical world."
   },
   "Ti": {
     "code": "Ti",
@@ -61,6 +75,8 @@
     "attitude": "Introverted",
     "domain": "Logic",
     "slide": "Academic Knowledge",
-    "description": "Seeking to understand how something works structurally; demanding complete underlying knowledge"
+    "description": "Seeking to understand how something works structurally; demanding complete underlying knowledge",
+    "descriptionLong": "The function of internal logical structure — building precise, self-consistent frameworks and rejecting what doesn't fit.",
+    "descriptionBehaviour": "Together, Ti is the capacity to perceive *whether a system, argument or set of ideas is internally consistent* — a rational evaluation of structural integrity independent of external facts."
   }
 }
