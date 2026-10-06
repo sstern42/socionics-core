@@ -15,6 +15,9 @@
     "stressGroup": "Viscous",
     "implementationGroup": "Perfectionist",
     "planningStyle": "Free",
+    "quasiQuadra": "Phi",
+    "perceptionGroup": "Receptive",
+    "thinkingForm": "Causal-deterministic",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -59,6 +62,9 @@
     "stressGroup": "Trainable",
     "implementationGroup": "Resultator",
     "planningStyle": "Stable",
+    "quasiQuadra": "Psi",
+    "perceptionGroup": "Circumstantial",
+    "thinkingForm": "Holographic",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -103,6 +109,9 @@
     "stressGroup": "Trainable",
     "implementationGroup": "Implementer",
     "planningStyle": "Stable",
+    "quasiQuadra": "Psi",
+    "perceptionGroup": "Thorough",
+    "thinkingForm": "Vortex",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -147,6 +156,9 @@
     "stressGroup": "Viscous",
     "implementationGroup": "Finisher",
     "planningStyle": "Free",
+    "quasiQuadra": "Phi",
+    "perceptionGroup": "Flexible",
+    "thinkingForm": "Dialectical-algorithmic",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",
@@ -191,6 +203,9 @@
     "stressGroup": "Fragile",
     "implementationGroup": "Finisher",
     "planningStyle": "Staged",
+    "quasiQuadra": "Omega",
+    "perceptionGroup": "Circumstantial",
+    "thinkingForm": "Dialectical-algorithmic",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -235,6 +250,9 @@
     "stressGroup": "Flexible",
     "implementationGroup": "Implementer",
     "planningStyle": "Variant",
+    "quasiQuadra": "Chi",
+    "perceptionGroup": "Receptive",
+    "thinkingForm": "Vortex",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -279,6 +297,9 @@
     "stressGroup": "Flexible",
     "implementationGroup": "Resultator",
     "planningStyle": "Variant",
+    "quasiQuadra": "Chi",
+    "perceptionGroup": "Flexible",
+    "thinkingForm": "Holographic",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -323,6 +344,9 @@
     "stressGroup": "Fragile",
     "implementationGroup": "Perfectionist",
     "planningStyle": "Staged",
+    "quasiQuadra": "Omega",
+    "perceptionGroup": "Thorough",
+    "thinkingForm": "Causal-deterministic",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",
@@ -367,6 +391,9 @@
     "stressGroup": "Viscous",
     "implementationGroup": "Finisher",
     "planningStyle": "Variant",
+    "quasiQuadra": "Psi",
+    "perceptionGroup": "Flexible",
+    "thinkingForm": "Causal-deterministic",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -411,6 +438,9 @@
     "stressGroup": "Trainable",
     "implementationGroup": "Implementer",
     "planningStyle": "Staged",
+    "quasiQuadra": "Phi",
+    "perceptionGroup": "Thorough",
+    "thinkingForm": "Holographic",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",
@@ -455,6 +485,9 @@
     "stressGroup": "Trainable",
     "implementationGroup": "Resultator",
     "planningStyle": "Staged",
+    "quasiQuadra": "Phi",
+    "perceptionGroup": "Circumstantial",
+    "thinkingForm": "Vortex",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -499,6 +532,9 @@
     "stressGroup": "Viscous",
     "implementationGroup": "Perfectionist",
     "planningStyle": "Variant",
+    "quasiQuadra": "Psi",
+    "perceptionGroup": "Receptive",
+    "thinkingForm": "Dialectical-algorithmic",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -543,6 +579,9 @@
     "stressGroup": "Flexible",
     "implementationGroup": "Implementer",
     "planningStyle": "Free",
+    "quasiQuadra": "Omega",
+    "perceptionGroup": "Receptive",
+    "thinkingForm": "Holographic",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Intuitive",
@@ -587,6 +626,9 @@
     "stressGroup": "Fragile",
     "implementationGroup": "Finisher",
     "planningStyle": "Stable",
+    "quasiQuadra": "Chi",
+    "perceptionGroup": "Circumstantial",
+    "thinkingForm": "Causal-deterministic",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Intuitive",
@@ -631,6 +673,9 @@
     "stressGroup": "Fragile",
     "implementationGroup": "Perfectionist",
     "planningStyle": "Stable",
+    "quasiQuadra": "Chi",
+    "perceptionGroup": "Thorough",
+    "thinkingForm": "Dialectical-algorithmic",
     "dichotomies": {
       "extraversionIntroversion": "Extraverted",
       "intuitionSensing":         "Sensing",
@@ -675,6 +720,9 @@
     "stressGroup": "Flexible",
     "implementationGroup": "Resultator",
     "planningStyle": "Free",
+    "quasiQuadra": "Omega",
+    "perceptionGroup": "Flexible",
+    "thinkingForm": "Vortex",
     "dichotomies": {
       "extraversionIntroversion": "Introverted",
       "intuitionSensing":         "Sensing",

@@ -301,5 +301,103 @@
       "description": "Decide by ethical categories but adapt them to the situation, keeping everyone comfortable and steering between people's interests. Logical territory can make them uneasy.",
       "source": "kovalenko-zvonaryova-2020"
     }
-  }
+  },
+  "quasiQuadras": {
+    "groupNote": "How a type operates under certainty and uncertainty: what it wants settled, and what it will give up to get it. Used for resolving interpersonal conflicts and for preparing and conducting negotiations.",
+    "Phi": {
+      "name": "Phi",
+      "altName": "quasi-Delta",
+      "formula": ["Carefree", "Yielding", "Democratic"],
+      "types": ["ILE", "SEI", "ESI", "LIE"],
+      "description": "Want certainty and constancy in relationships, feelings, working methods and their effectiveness, and material comfort, while keeping their options open. Focus on what they want and like, will give ground or pay more to get it, and will finish a joint task themselves to reach a result they are happy with. Prefer not to plan ahead, working from the options a situation offers.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Omega": {
+      "name": "Omega",
+      "altName": "quasi-Alpha",
+      "formula": ["Carefree", "Obstinate", "Aristocratic"],
+      "types": ["EIE", "LSI", "IEE", "SLI"],
+      "description": "Hold a steady position on rules, laws, choice, emotional stability, settled tastes and their own comfort, and will change plans or drop their own aims to protect it. Start from established rules and conditions and tend to defend their own and others' rights. Attentive to the current situation; they would rather adjust a plan as they go than plan ahead.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Chi": {
+      "name": "Chi",
+      "altName": "quasi-Gamma",
+      "formula": ["Farsighted", "Yielding", "Aristocratic"],
+      "types": ["IEI", "SLE", "EII", "LSE"],
+      "description": "Want certainty about relationships and attachments, work and its methods, territory and status. Fixed plans and deadlines become goals in themselves: they build up resources deliberately and prepare each step in advance. Focus on what they want, will give ground to get it, and need plans agreed and changes flagged early.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Psi": {
+      "name": "Psi",
+      "altName": "quasi-Beta",
+      "formula": ["Farsighted", "Obstinate", "Democratic"],
+      "types": ["LII", "ESE", "SEE", "ILI"],
+      "description": "Seek certainty about principles, rules, authority, personal space, plans and timing, and about emotions and motivation, and may insist on it so they can plan ahead. Will give up personal aims that threaten their plans, mood, principles or status. Defend their principles, rely on a clear forecast and expect warning of any change.",
+      "source": "kovalenko-zvonaryova-2020"
+    }
+  },
+  "perception": {
+    "groupNote": "How a type works with ideas built on intuition and sensing, and so which way of presenting information it takes in best. Useful for managers and teachers when setting tasks, giving instructions and teaching.",
+    "Thorough": {
+      "name": "Thorough",
+      "formula": ["Rational", "Sensing", "Tactical"],
+      "types": ["ESE", "LSI", "ESI", "LSE"],
+      "description": "Strong and quick with the material world: they adjust the form, look and quality of things to suit changing circumstances, and their speech is full of concrete physical detail. Intuitive information, such as meanings, trends and forecasts, is where they feel least sure and can become anxious.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Circumstantial": {
+      "name": "Circumstantial",
+      "formula": ["Rational", "Intuitive", "Strategic"],
+      "types": ["LII", "EIE", "LIE", "EII"],
+      "description": "Strong and quick with time, forecasts and opportunities: they spot the weak points in a situation and speed processes up or slow them down as needed. Their accounts follow a timeline, from background and plan to the main part and conclusions, without much physical detail. Sensory information is where they feel least sure.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Flexible": {
+      "name": "Flexible",
+      "formula": ["Irrational", "Sensing", "Strategic"],
+      "types": ["SEI", "SLE", "SEE", "SLI"],
+      "description": "Hold firm, finely tuned standards for appearance, comfort and physical sensation, and judge themselves and others by how well they perceive the material world. Form quick, surface impressions from images and associations and welcome detailed intuitive input from others. Change topic easily once it stops being comfortable or interesting.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Receptive": {
+      "name": "Receptive",
+      "formula": ["Irrational", "Intuitive", "Tactical"],
+      "types": ["ILE", "IEI", "ILI", "IEE"],
+      "description": "Hold firm, finely tuned ideas built on images, associations, possibilities and broad trends, and judge themselves and others by how well they read them. Form quick, surface impressions from physical sensation and welcome detailed sensory input from others. Move off a topic quickly once it stops interesting them.",
+      "source": "kovalenko-zvonaryova-2020"
+    }
+  },
+  "thinkingForms": {
+    "groupNote": "How a type processes information when it thinks a problem through. Used for assembling teams, particularly for brainstorming. These are the four groups Gulenko calls cognitive styles. The authors base the descriptions on their own resonance-group experiments and note that the model-level formula has not yet been identified.",
+    "Dialectical-algorithmic": {
+      "name": "Dialectical-algorithmic",
+      "formula": ["Dynamic", "Process", "Negativist"],
+      "types": ["SEI", "EIE", "ILI", "LSE"],
+      "description": "See the world through differences and change: what has changed, and how it was before. Work a problem through in detail, suit long-running and continuously changing tasks, think in opposites and argue by contradiction, and are associated with forecasting. Slow to get into a line of thought and slow to leave it.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Holographic": {
+      "name": "Holographic",
+      "formula": ["Static", "Result", "Negativist"],
+      "types": ["LII", "SLE", "ESI", "IEE"],
+      "description": "Get into a situation quickly, find its weak points and the factors working against it, and reach a solution fast. Think clearly, turn a problem over to see it from the opposite side and jump between viewpoints, building a whole picture from several angles. May not work the solution through in detail.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Causal-deterministic": {
+      "name": "Causal-deterministic",
+      "formula": ["Static", "Process", "Positivist"],
+      "types": ["ILE", "LSI", "SEE", "EII"],
+      "description": "Build long, carefully argued chains of cause and effect from facts that stay constant over time, focusing on what supports the conclusion. Thorough with the evidence but slow to start. Gulenko warns of the risk of reductionism: a chain can include causes and effects that contradict each other or cannot be tested.",
+      "source": "kovalenko-zvonaryova-2020"
+    },
+    "Vortex": {
+      "name": "Vortex",
+      "formula": ["Dynamic", "Result", "Positivist"],
+      "types": ["ESE", "IEI", "LIE", "SLI"],
+      "description": "Analyse the world by trying one situation or option after another, looking for whatever comes closest to their ideal picture, and are good at gathering support for a chosen position. Focus on intermediate results, so they get in and out of a line of thought quickly and switch easily, sometimes at the expense of detail.",
+      "source": "kovalenko-zvonaryova-2020"
+    }
+  },
+  "psychoanalyticNote": "The book's psychoanalytic groups (Caring, Infantile, Aggressor and Victim) are the romance styles: the same formula (Sensing or Intuitive, Judicious or Decisive, Static or Dynamic) and the same membership. They are stored on types as romanceStyle, with Caring as Careful."
 }

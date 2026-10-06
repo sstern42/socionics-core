@@ -187,6 +187,39 @@ Object.entries(WORK_GROUPS).forEach(([key, field]) => {
   }));
 });
 
+// Further small groups from the same chapter, checked the same way: each
+// formula partitions the 16 types into four groups of four, and the stored
+// membership agrees with it.
+section('further small groups');
+const FURTHER_GROUPS = {
+  quasiQuadras:  'quasiQuadra',
+  perception:    'perceptionGroup',
+  thinkingForms: 'thinkingForm'
+};
+Object.entries(FURTHER_GROUPS).forEach(([key, field]) => {
+  const grp = data.groups[key];
+  const entries = Object.entries(grp).filter(([k]) => k !== 'groupNote');
+  const byFormula = e => all.filter(t => hasPoles(t, e.formula)).map(t => t.code);
+  assert(`${key}: groupNote and 4 groups`, typeof grp.groupNote === 'string' && entries.length === 4 &&
+    entries.every(([k, e]) => e.name === k && typeof e.description === 'string' && groupSource(e.source)));
+  assert(`${key}: each type in one group`, all.every(t => entries.filter(([, e]) => hasPoles(t, e.formula)).length === 1));
+  assert(`${key}: types match formula`,    entries.every(([, e]) =>
+    e.types.length === 4 && e.types.slice().sort().join() === byFormula(e).sort().join()));
+  assert(`${key}: type.${field} matches`,  all.every(t => {
+    const match = entries.find(([, e]) => hasPoles(t, e.formula));
+    return match && t[field] === match[0];
+  }));
+});
+assert('quasiQuadras: altName on all four', Object.entries(data.groups.quasiQuadras)
+  .filter(([k]) => k !== 'groupNote').every(([, e]) => /^quasi-(Alpha|Beta|Gamma|Delta)$/.test(e.altName)));
+
+// The psychoanalytic groups are the romance styles: same formula, same types.
+const PSYCHO = { Careful: ['Sensing', 'Judicious', 'Dynamic'], Infantile: ['Intuitive', 'Judicious', 'Static'],
+                 Aggressor: ['Sensing', 'Decisive', 'Static'],  Victim: ['Intuitive', 'Decisive', 'Dynamic'] };
+assert('psychoanalyticNote is a string', typeof data.groups.psychoanalyticNote === 'string');
+assert('psychoanalytic formula gives romanceStyle', all.every(t =>
+  Object.entries(PSYCHO).filter(([, f]) => hasPoles(t, f)).map(([n]) => n).join() === t.romanceStyle));
+
 // goalSetting lives on the temperaments; membership is the temperament's types.
 const temps = Object.entries(data.groups.temperaments);
 assert('goalSettingNote is a string',  typeof data.groups.goalSettingNote === 'string');

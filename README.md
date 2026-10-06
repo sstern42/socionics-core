@@ -1,6 +1,6 @@
 # socionics-core
 
-Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, 15 dichotomies, quadras, clubs, temperaments and five work-related small groups, structured for use in any JavaScript project.
+Canonical socionics data and query library. Covers all 16 types, 16 intertype relations, 8 functions, 15 dichotomies, quadras, clubs, temperaments, five work-related small groups and three further small groups (quasi-quadras, perception groups and thinking forms), structured for use in any JavaScript project.
 
 No dependencies. No build step. Works in Node.js 12+.
 
@@ -90,6 +90,9 @@ getType('LII')  // or 'lii', 'Lii'
   stressGroup: 'Trainable',
   implementationGroup: 'Resultator',
   planningStyle: 'Stable',
+  quasiQuadra: 'Psi',
+  perceptionGroup: 'Circumstantial',
+  thinkingForm: 'Holographic',
   dichotomies: {
     extraversionIntroversion: 'Introverted',
     intuitionSensing: 'Intuitive',
@@ -298,7 +301,7 @@ Each temperament carries a `goalSetting` object with the source's name and descr
 ```
 
 #### `getAllGroups()` → object
-Returns the raw groups data: quadras, clubs and temperaments, the four work-group definitions below, the notes, and the `sources` map.
+Returns the raw groups data: quadras, clubs and temperaments, the four work-group definitions and three further groups below, the notes, and the `sources` map.
 
 #### Work groups
 
@@ -328,7 +331,21 @@ The fifth, goal-setting, is stored on the temperaments (see `getTemperament` abo
 - `altName`: `leadershipStyle` only. Sergei Savchenko's Tarot suit names (Pentacles, Staves, Swords, Cups), a memory aid rather than part of the theory.
 - When iterating a group's definitions, skip the `groupNote` key.
 
-Unlike quadras, clubs, temperaments and the dichotomies, which follow from the structure of Model A, the club `workProfile`, the `goalSetting` descriptions and the four work groups above are one school's interpretation. They come from chapter 11 of R.K. Kovalenko and N.A. Zvonaryova, *Sotsionika: polnyy kurs lektsiy* (*Socionics: A Complete Lecture Course*), Novosibirsk, 2020, and are attributed through their `source` key, which points into the top-level `sources` map in `data/groups.json`. The authors base the stress-resistance and implementation descriptions on their own resonance-group experiments.
+#### Further small groups
+
+Three more groups from the same chapter use the same shape: a `groupNote` and four definitions keyed by name, each with `formula`, `types`, `description` and `source`.
+
+| Key in `data.groups` | Groups | Type field |
+|----------------------|--------|------------|
+| `quasiQuadras` | Phi, Omega, Chi, Psi | `quasiQuadra` |
+| `perception` | Thorough, Circumstantial, Flexible, Receptive | `perceptionGroup` |
+| `thinkingForms` | Dialectical-algorithmic, Holographic, Causal-deterministic, Vortex | `thinkingForm` |
+
+- `altName`: on `quasiQuadras`, the quadra each group is a quasi-version of (quasi-Delta for Phi, quasi-Alpha for Omega, quasi-Gamma for Chi, quasi-Beta for Psi).
+- `thinkingForms` are the four groups Gulenko calls cognitive styles.
+- The book's psychoanalytic groups are the romance styles under another name, with the same formula and the same types, so they have no field of their own. `data.groups.psychoanalyticNote` records this, and `romanceStyle` holds the membership.
+
+Unlike quadras, clubs, temperaments and the dichotomies, which follow from the structure of Model A, the club `workProfile`, the `goalSetting` descriptions, the four work groups and the three further groups above are one school's interpretation. They come from chapter 11 of R.K. Kovalenko and N.A. Zvonaryova, *Sotsionika: polnyy kurs lektsiy* (*Socionics: A Complete Lecture Course*), Novosibirsk, 2020, and are attributed through their `source` key, which points into the top-level `sources` map in `data/groups.json`. The authors base the stress-resistance, implementation and thinking-form descriptions on their own resonance-group experiments.
 
 ---
 
