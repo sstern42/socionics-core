@@ -1,7 +1,7 @@
 {
   "name": "socionics-core",
-  "version": "1.4.0",
-  "description": "Canonical socionics data and query library — 16 types, intertype relations, dichotomies, quadras, clubs, temperaments and work-related small groups.",
+  "version": "1.5.0",
+  "description": "Canonical socionics data and query library — 16 types, intertype relations, dichotomies, quadras, clubs, temperaments, work-related small groups, quasi-quadras, perception groups and thinking forms.",
   "main": "index.js",
   "author": "Spencer Stern (https://github.com/sstern42)",
   "license": "MIT",
