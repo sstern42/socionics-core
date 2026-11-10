@@ -48,7 +48,7 @@
       "dualStyle": "Careful-Infantile",
       "lifeStage": "Old age",
       "valuedFunctions": ["Ne", "Fi", "Te", "Si"],
-      "description": "Delta types share an orientation toward protecting and improving the immediate environment for those within it. Practical idealism — making things genuinely better in concrete, lasting ways."
+      "description": "Delta types share an orientation toward protecting and improving the immediate environment for those within it. Practical idealism: making things genuinely better in concrete, lasting ways."
     }
   },
   "clubs": {
@@ -90,7 +90,7 @@
       "types": ["SLE", "LSI", "LSE", "SLI"],
       "mbti": ["ESTp", "ISTj", "ESTj", "ISTp"],
       "theme": "Practical, matter-of-fact problem solving",
-      "description": "ST types combine Sensing and Logic. Action-oriented realists who prefer results over theory. Beta STs are driven by extroverted Sensing — fast-paced, risk-taking, tactical. Delta STs are driven by introverted Sensing — structured, methodical, grounded.",
+      "description": "ST types combine Sensing and Logic. Action-oriented realists who prefer results over theory. Beta STs are driven by extroverted Sensing: fast-paced, risk-taking, tactical. Delta STs are driven by introverted Sensing: structured, methodical, grounded.",
       "workProfile": {
         "formula": ["Logical", "Sensing", "Aristocratic"],
         "detailed": ["Logical systems within production", "Hierarchical management", "Systems, structures and technology", "Technology for making physical things"],
