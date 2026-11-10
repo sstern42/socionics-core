@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.1
+
+- No em dashes in the data: 13 in the function descriptions (`descriptionLong`, `descriptionBehaviour`), 3 in the group descriptions and 4 in the relation descriptions, replaced with colons, commas or brackets to match socionicsinsight.com's house style. The function texts still match the site's function pages word for word. Also the package description and the README example. No data values other than these strings change.
+
 ## 1.5.0
 
 - Added three more small groups from Kovalenko and Zvonaryova (2020), chapter 11, as top-level objects in `data/groups.json`, each with a `groupNote` and four definitions (`name`, `formula`, `types`, `description`, `source`):

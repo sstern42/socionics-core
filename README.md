@@ -144,7 +144,7 @@ Returns the function object for a code (`'Ne'`, `'Ti'`, `'Fe'` etc).
   domain: 'Intuition',
   slide: 'Creative Thinking',
   description: 'Noticing trends and possibilities in a reality filled with unknown opportunities',
-  descriptionLong: 'The function of possibility — building associative maps of what could exist rather than what does.',
+  descriptionLong: 'The function of possibility: building associative maps of what could exist rather than what does.',
   descriptionBehaviour: 'Together, Ne is the capacity to read the external world for what it *could become* rather than what it currently is.'
 }
 ```
